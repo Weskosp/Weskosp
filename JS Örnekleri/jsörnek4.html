@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kaandügme{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        button:nth-of-type(1){
+            top: 80px;
+        }
+        button:nth-of-type(2){
+            top: 80px;
+            left: 528px;
+        }
+        #slider{
+            width: 400px;
+            height: 250px;
+            margin-left: 110px;
+            overflow: hidden;
+        }
+        .kaan{
+            width: 150px;
+            height: 100px;
+            margin: auto;
+            margin-top: 72px;
+            float: left;
+        }
+        .kaan:nth-of-type(1){
+            background-color: blue;
+        }
+        .kaan:nth-of-type(2){
+            background-color: red;
+        }
+        .kaan:nth-of-type(3){
+            background-color: green;
+        }
+        .kaan:nth-of-type(4){
+            background-color: yellow;
+        }
+        .kaan:nth-of-type(5){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <button class="kaandügme">&lt;</button>
+    <div id="slider">
+        <div class="kaan"></div>
+        <div class="kaan"></div>
+        <div class="kaan"></div>
+        <div class="kaan"></div>
+        <div class="kaan"></div>
+    </div>
+    <button class="kaandügme">&gt;</button>
+</body>
+</html>

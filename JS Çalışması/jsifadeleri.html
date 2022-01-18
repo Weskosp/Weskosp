@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Programları -->
+    <!-- Bir bilgisayar programı, bir bilgisayar tarafından "yürütülecek" "talimatların" bir listesidir. -->
+    <!-- Bir programlama dilinde, bu programlama talimatlarına deyimler denir . -->
+    <!-- JavaScript programı, programlama ifadelerinin bir listesidir. -->
+
+    <!-- HTML'de JavaScript programları web tarayıcısı tarafından yürütülür. -->
+
+
+    <!-- JavaScript İfadeleri -->
+    <!-- JavaScript ifadeleri şunlardan oluşur: -->
+    <!-- Değerler, Operatörler, İfadeler, Anahtar Sözcükler ve Yorumlar. -->
+    <!-- Bu ifade, tarayıcıya "Merhaba Dolly" yazmasını söyler. id="demo" içeren bir HTML öğesinin içinde: -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 'Merhaba Muhammed';
+    </script>
+    <!-- Çoğu JavaScript programı, birçok JavaScript ifadesi içerir. -->
+    <!-- İfadeler, yazıldığı sırayla tek tek yürütülür. -->
+
+    <!-- JavaScript programları (ve JavaScript ifadeleri) genellikle JavaScript kodu olarak adlandırılır. -->
+
+
+    <!-- Noktalı virgül ; -->
+    <!-- Noktalı virgüller JavaScript deyimlerini ayırır. -->
+    <!-- Her yürütülebilir ifadenin sonuna noktalı virgül ekleyin: -->
+    <p id="demo2"></p>
+    <script>
+        let a,b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById('demo2').innerHTML = c;
+    </script>
+
+    <!-- Noktalı virgülle ayrıldığında, bir satırda birden çok ifadeye izin verilir: -->
+    <p id="demo3"></p>
+    <script>
+        let d, e, f;
+        d = 20;
+        e = 11;
+        f = d + e;
+        document.getElementById('demo3').innerHTML = f;
+    </script>
+
+    <!-- Web'de noktalı virgül içermeyen örnekler görebilirsiniz. -->
+    <!-- Noktalı virgülle sonlandırma ifadeleri gerekli değildir, ancak şiddetle tavsiye edilir. -->
+
+
+    <!-- JavaScript Beyaz Alan -->
+    <!-- JavaScript birden çok boşluğu yok sayar. Daha okunabilir hale getirmek için betiğinize beyaz boşluk ekleyebilirsiniz. -->
+    <!-- Aşağıdaki satırlar eşdeğerdir: -->
+    <!--
+        let person = "Hege";
+        let person="Hege";
+    -->
+
+    <!-- Operatörlerin ( = + - * / ) etrafına boşluk koymak iyi bir uygulamadır: -->
+    <!--
+       let x = y + z; 
+    -->
+
+
+    <!-- JavaScript Satır Uzunluğu ve Satır Sonları -->
+    <!-- En iyi okunabilirlik için programcılar genellikle 80 karakterden uzun kod satırlarından kaçınmayı severler. -->
+    <!-- Bir JavaScript ifadesi bir satıra sığmıyorsa, onu kırmak için en iyi yer bir operatörden sonradır: -->
+    <p id="demo4"></p>
+    <script>
+        document.getElementById('demo4').innerHTML =
+        'Merhaba Ahmet Dick';
+    </script>
+
+
+    <!-- JavaScript Kod Blokları -->
+    <!-- JavaScript ifadeleri, kod bloklarında, küme parantezleri {...} içinde gruplandırılabilir. -->
+    <!-- Kod bloklarının amacı, birlikte yürütülecek ifadeleri tanımlamaktır. -->
+    <!-- Bloklar halinde gruplandırılmış ifadeleri bulacağınız yerlerden biri JavaScript işlevleridir: -->
+    <p id="demo5"></p>
+    <button onclick="myFunction()">Tıkla!</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo5").innerHTML = "Merhaba Niğmet Cock";
+        }
+    </script>
+
+    <!-- Bu eğitimde, kod blokları için 2 girinti boşluğu kullanıyoruz. -->
+    <!-- Bu öğreticide daha sonra işlevler hakkında daha fazla bilgi edineceksiniz. -->
+
+
+    <!-- JavaScript Anahtar Kelimeleri -->
+    <!-- JavaScript ifadeleri , gerçekleştirilecek JavaScript eylemini tanımlamak için genellikle bir anahtar sözcükle başlar . -->
+    <!-- Bu eğitimde öğreneceğiniz bazı anahtar kelimelerin listesi: -->
+
+    <!--
+        var;	Bir değişken bildirir
+
+        let;	Bir blok değişkeni bildirir
+
+        const;	Bir blok sabiti bildirir
+
+        if; 	Bir koşulda yürütülecek bir ifade bloğunu işaretler
+
+        switch;	Farklı durumlarda yürütülecek bir ifade bloğunu işaretler
+
+        for;	Bir döngüde yürütülecek bir ifade bloğunu işaretler
+
+        function;   Bir işlev bildirir
+
+        return;	Bir işlevden çıkar
+
+        try;    Bir ifade bloğuna hata işleme uygular
+    -->
+
+    <!-- JavaScript anahtar kelimeleri ayrılmış kelimelerdir. Ayrılmış kelimeler değişkenler için isim olarak kullanılamaz. -->
+</body>
+</html>

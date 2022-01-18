@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <style>
+        body{
+            font-family: cursive;
+        }
+        td{
+            padding-bottom: 14px;
+            padding-left: 25px;
+            padding-top: 25px;
+        }
+        input, select{
+            font-family: cursive;
+            border-style: none;
+        }
+        #form{
+            background-color: tan;
+            width: 400px;
+            height: 585px;
+            margin: auto;
+            border-radius: 20px;
+        }
+        h1{
+            width: 150px;
+            margin: auto;
+            margin-bottom: 10px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: tan;
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kayıt Ol</h1>
+    <div>
+        <div>
+            <ul>
+                <li>Anasayfa</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>    
+        </div>
+        <div id="form">
+            <form action="kayıtol.html">
+                <table>
+                    <tr>
+                        <td><label for="ad">Adınız:</label></td>
+                        <td><input type="text" id="ad" placeholder="Adınızı girin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="soyad">Soyadınız:</label></td>
+                        <td><input type="text" id="soyad" placeholder="Soyadınızı girin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kullanıcı">Kullanıcı Adınız:</label></td>
+                        <td><input type="text" id="kullanıcı" placeholder="Kullanıcı Adınızı girin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sifre">Şifre:</label></td>
+                        <td><input type="password" id="sifre" placeholder="Şifrenizi girin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="eposta">E-Posta:</label></td>
+                        <td><input type="email" id="eposta" placeholder="E-Postanızı girin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cins">Cinsiyetiniz:</label></td>
+                        <td>
+                            <input type="radio" name="cins" id="erkek">
+                            <label for="erkek">Erkek</label>
+                            <input type="radio" name="cins" id="kadın">
+                            <label for="kadın">Kadın</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="sehir">Şehir seçiniz:</label></td>
+                        <td>
+                            <select name="sehir" id="sehir">
+                                <option value="istanbul">İstanbul</option>
+                                <option value="ankara">Ankara</option>
+                                <option value="konya">Konya</option>
+                                <option value="hatay">Hatay</option>
+                                <option value="çanakkale">Çanakkale</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tarih">Doğum tarihiniz:</label></td>
+                        <td><input type="date" id="tarih" placeholder="Doğum Tarihiniz"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" placeholder="Gönder"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

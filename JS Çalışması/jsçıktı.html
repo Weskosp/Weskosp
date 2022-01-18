@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Çıktısı -->
+    <!-- JavaScript Görüntüleme Olanakları -->
+
+    <!-- JavaScript, verileri farklı şekillerde "gösterebilir": -->
+    <!-- innerHTML kullanarak bir HTML öğesine yazma. -->
+    <!-- document.write() kullanarak HTML çıktısına yazma. -->
+    <!-- window.alert() kullanarak bir uyarı kutusuna yazma. -->
+    <!-- console.log() kullanarak tarayıcı konsoluna yazma. -->
+
+
+    <!-- innerHTML'yi kullanma -->
+    <!-- Bir HTML öğesine erişmek için JavaScript bu document.getElementById(id)yöntemi kullanabilir . -->
+    <!-- id özelliği, HTML öğesini tanımlar. innerHTML özelliği, HTML içeriğini tanımlar: -->
+    <p>Bu bir Paragraf...</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 5 + 7;
+    </script>
+    <!-- Bir HTML öğesinin innerHTML özelliğini değiştirmek, verileri HTML'de görüntülemenin yaygın bir yoludur. -->
+
+
+    <!-- Document.write()'ı kullanma -->
+    <!-- Test amacıyla, kullanımı uygundur document.write(): -->
+    <p>Bu bir paragraf.</p>
+    <script>
+        document.write('asdasfanamas');
+        document.write(20 + 11);
+    </script><br><br>
+    <!-- Bir HTML belgesi yüklendikten sonra document.write() kullanmak, mevcut tüm HTML'yi siler : -->
+    <button onclick="document.write(20 + 11, ' super idol')">tıkla biç</button>
+    <!-- Document.write() yöntemi yalnızca test için kullanılmalıdır. -->
+
+
+    <!-- window.alert()'i kullanma -->
+    <!-- Verileri görüntülemek için bir uyarı kutusu kullanabilirsiniz: -->
+    <p>bu bir paragraf.</p>
+    <script>
+        window.alert('super idol ', 20 + 11);
+    </script>
+    <!-- window Anahtar kelimeyi atlayabilirsiniz . -->
+    <!-- JavaScript'te, pencere nesnesi global kapsam nesnesidir; bu, değişkenlerin, özelliklerin ve yöntemlerin varsayılan olarak pencere nesnesine ait olduğu anlamına gelir. Bu aynı zamanda windowanahtar sözcüğü belirtmenin isteğe bağlı olduğu anlamına gelir : -->
+    <script>
+        alert(20 + 11 ,'super idol '); /* ilk hangi önceyse onu sadece gösterir */
+    </script>
+
+
+
+    <!-- Console.log()'u kullanma -->
+    <!-- Hata ayıklama amacıyla, console.log()verileri görüntülemek için tarayıcıdaki yöntemi çağırabilirsiniz . -->
+    <!-- Daha sonraki bir bölümde hata ayıklama hakkında daha fazla bilgi edineceksiniz. -->
+    <p>Klavyenizdeki F12 hata ayıklamayı etkinleştirecektir. <br> Ardından hata ayıklayıcı menüsünde "Konsol"u seçin. <br> Ardından tekrar Çalıştır'ı tıklayın.</p>
+    <script>
+        console.log('super idol ', 5 + 31 );
+    </script>
+
+
+    <!-- JavaScript Yazdır -->
+    <!-- JavaScript'in herhangi bir yazdırma nesnesi veya yazdırma yöntemi yoktur. -->
+    <!-- JavaScript'ten çıktı cihazlarına erişemezsiniz. -->
+    <!-- Tek istisna, window.print()geçerli pencerenin içeriğini yazdırmak için tarayıcıdaki yöntemi çağırabilmenizdir . -->
+    <button onclick="window.print()">Yazdır!</button>
+</body>
+</html>

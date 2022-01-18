@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Open Sans";
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #header{
+            width: 100%;
+            height: 400px;
+            background-color: black;
+            position: relative;
+            overflow: hidden;
+            transition: all .2s ease-in;
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        #text-header{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 6rem;
+            width: 100%;
+            height: 400px;
+            z-index: 2;
+            animation: anim5 2s ease-in both;
+            text-align: center;
+            transition: all .2s ease-in;
+        }
+        #text-header a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 40px;
+            padding: 6px;
+            background-color: rgb(49, 58, 58);
+            animation: anim5 2s ease-in both;
+            border: 2px solid gray;
+            overflow: hidden;
+            transition: all .2s ease-in;
+        }
+        #text-header p, #text-header h1{
+            transition: all .2s ease;
+        }
+        #text-header:hover + #header{
+            filter: blur(10px);
+        }
+        #text-header:hover > p{
+            font-size: 20px;
+        }
+        #text-header:hover > h1{
+            font-size: 50px;
+        }
+        #text-header a:hover{
+            box-shadow: 48px 0px inset rgba(110, 164, 226, 0.7), -48px 0px inset rgba(110, 164, 226, 0.7);
+            font-size: 20px;
+            padding: 4px;
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        .meme-img{
+            position: absolute;
+            width: 25%;
+            height: 400px;
+            float: left;
+            z-index: 0;
+        }
+        .meme-img:nth-child(1){
+            background-color: rgb(224, 121, 224);
+            transition: all .5s ease-in;
+            animation: anim .5s ease-in both;
+            animation-delay: .2s;
+        }
+        .meme-img:nth-child(2){
+            background-color: violet;
+            transition: all .5s ease-in;
+            animation: anim2 .5s ease-in both;
+            animation-delay: .5s;
+        }
+        .meme-img:nth-child(3){
+            background-color: rgb(228, 146, 228);
+            transition: all .5s ease-in;
+            animation: anim3 .5s ease-in both;
+            animation-delay: .7s;
+        }
+        .meme-img:nth-child(4){
+            background-color: rgb(233, 176, 233);
+            transition: all .5s ease-in;
+            animation: anim4 .5s ease-in both;
+            animation-delay: .9s;
+        }
+        @keyframes anim{
+            from{
+                transform: translate(-865px, 500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(0px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim2{
+            from{
+                transform: translate(1200px, -500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(336px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim3{
+            from{
+                transform: translate(-200px, 500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(670px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim4{
+            from{
+                transform: translate(1860px, -500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(1005px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim5 {
+            from{
+                color: transparent;
+                filter: blur(50px);
+                background-color: transparent;
+            }
+            to{
+                filter: blur(0);
+            }
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        #menu{
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            background-color: dimgray;
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #menu li{
+            float: left;
+        }
+        #menu a{
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: transparent;
+            text-align: center;
+            text-decoration: none;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            z-index: 1;
+            overflow: hidden;
+        }
+        #menu a::before{
+            position: absolute;
+            left: -100px;
+            top: 0;
+            content: "";
+            width: 100px;
+            height: 50px;
+            background-color: rgba(110, 164, 226, 0.7);
+            z-index: -1;
+            transition: all .2s ease-in;
+        }
+        #menu a:hover::before{
+            left: 0;
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        #devp{
+            width: 100%;
+            height: 450px;
+            background-color: rgb(177, 175, 175);
+            padding: 3.2rem;
+        }
+        #devp p{
+            text-align: justify;
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        #web-card{
+            position: relative;
+            width: 100%;
+            height: 500px;
+            background-color: rgb(68, 67, 67);
+            padding: 2.6rem;
+            transition: all .2s ease-in;
+            overflow: hidden;
+        }
+        #cards{
+            display: flex;
+            position: absolute;
+            top: 11%;
+            height: 400px;
+            gap: 30px;
+        }
+        .card{
+            display: inline-block;
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+            transition: all .2s ease-in;
+            z-index: 1;
+        }
+        .text{
+            padding: 5px;
+        }
+        .imgs{
+            width: 400px;
+            height: 270px;
+            overflow: hidden;
+        }
+        .imgs img{
+            transition: all .7s ease;
+        }
+        .imgdiv{
+            z-index: 2;
+            width: 400px;
+            height: 267px;
+            position: absolute;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .card:hover img{
+            width: 500px;
+            transform: translate(-30px);
+        }
+        #cards:hover > .card:not(:hover){
+            filter: blur(2px) grayscale(1);
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        #footer{
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        /*-----------------------------------------------------------------------------------------------------------------------*/
+        @media screen and (min-width:1367px) {
+            .meme-img{
+                width: 25%;
+            }
+            @keyframes anim{
+            from{
+                transform: translate(-865px, 500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(0px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim2{
+            from{
+                transform: translate(1340px, -500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(475px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim3{
+            from{
+                transform: translate(84px, 500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(950px, 0px) skewX(-60deg);
+            }
+        }
+        @keyframes anim4{
+            from{
+                transform: translate(2290px, -500px) skewX(-60deg);
+            }
+            to{
+                transform: translate(1425px, 0px) skewX(-60deg);
+            }
+        }
+        #text-header a{
+            width: 150px;
+            height: 50px;
+            padding: 6px;
+            font-size: 21px;
+        }
+        #text-header h1{
+            font-size: 48px;
+        }
+        #text-header p{
+            font-size: 20px;
+        }
+        #text-header:hover > p{
+            font-size: 24px;
+        }
+        #text-header:hover > h1{
+            font-size: 55px;
+        }
+        #text-header a:hover{
+            box-shadow: 73.3px 0px inset rgba(110, 164, 226, 0.7), -73.3px 0px inset rgba(110, 164, 226, 0.7);
+            font-size: 22px;
+            padding: 5px;
+        }
+        #menu{
+            width: 100%;
+            height: 60px;
+            background-color: dimgray;
+        }
+        #menu a{
+            width: 130px;
+            height: 60px;
+            padding: 17px;
+            font-size: 19px;
+        }
+        #menu a::before{
+            left: -130px;
+            width: 130px;
+            height: 60px;
+        }
+        #devp{
+            height: 580px;
+        }
+        #devp p{
+            font-size: 22px;
+        }
+        #devp h2{
+            font-size: 30px;
+        }
+        #devp img{
+            width: 210px;
+        }
+        #web-card{
+            position: relative;
+            width: 100%;
+            height: 650px;
+            padding: 2.6rem;
+        }
+        #cards{
+            top: 8%;
+            height: 550px;
+            gap: 85px;
+        }
+        .card{
+            width: 550px;
+            height: 550px;
+            background-color: white;
+        }
+        .text{
+            font-size: 22px;
+            padding: 5px;
+        }
+        .imgs{
+            width: 550px;
+            height: 364px;
+            overflow: hidden;
+        }
+        .imgs img{
+            width: 580px;
+        }
+        .imgdiv{
+            width: 550px;
+            height: 364px;
+        }
+        .card:hover img{
+            width: 700px;
+            transform: translate(-45px);
+        }
+        }
+        /* CTRL + D = Çoklu seçim | ALT + fare imleci = Çoklu Edit */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="text-header">
+            <h1>Lorem İpsum Sit Amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maxime qui, ducimus delectus esse eligendi est neque facere?</p>
+            <a href=""><b>Düğme</b></a>
+        </div>
+        <div id="header">
+            <div class="meme-img"></div>
+            <div class="meme-img"></div>
+            <div class="meme-img"></div>
+            <div class="meme-img"></div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Anasayfa</a></li>
+                <li><a href="">Grafik</a></li>
+                <li><a href="">Yazılım</a></li>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">İletişim</a></li>
+            </ul>
+        </div>
+        <div id="devp">
+            <h2 style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <img src="download.jpg" width="150" style="float: left;margin-right: 10px;" alt="bilgisayar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos tenetur sapiente incidunt omnis hic repellat quis facere porro non! Voluptatem cupiditate accusantium labore, molestiae at repellendus fugit architecto? Illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus consequuntur eveniet rem ducimus numquam distinctio, reprehenderit nihil omnis recusandae optio dolor dicta est. Debitis tempora officia fuga, eius aspernatur quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis placeat sunt ab sed assumenda doloremque culpa non, voluptatem eius, voluptate vel quibusdam inventore deserunt, molestias harum modi omnis temporibus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ut corporis molestiae dignissimos! Quia perferendis sed soluta quibusdam officia! Itaque odit quasi explicabo eligendi fuga iste aliquam neque quas dolores. Omnis voluptas quasi nemo impedit porro officiis minus quis, atque, ad quos odit ab animi eum eos voluptatum optio necessitatibus, velit dolorum? Sunt eos expedita accusantium aut, quibusdam eligendi quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, voluptatum harum voluptates error quaerat blanditiis repellat accusamus, quod, doloribus tempore veritatis quae labore possimus. Impedit et ex commodi unde error!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laboriosam vel, doloremque quaerat hic non recusandae reiciendis, nam suscipit cumque ipsa iure obcaecati facere adipisci dicta consequatur excepturi voluptate amet! Adipisci consequuntur maiores laborum minus ipsa? Est quia deserunt in non nemo adipisci, optio commodi ipsam doloremque maxime nostrum quidem ratione blanditiis quam, dolorum dolor explicabo hic! Atque, est pariatur?</p>
+        </div>
+        <div id="web-card">
+            <div id="cards">
+                <div class="card">
+                    <div class="imgs">
+                        <div class="imgdiv"></div>
+                        <img src="1.jpg" width="430" alt="bilgisayar">
+                    </div>
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error molestiae sed asperiores sequi</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgs">
+                        <div class="imgdiv"></div>
+                        <img src="2.jpg" width="430" alt="bilgisayar">
+                    </div>
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error molestiae sed asperiores sequi</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgs">
+                        <div class="imgdiv"></div>
+                        <img src="3.jpg" width="430" alt="bilgisayar">
+                    </div>
+                    <div class="text">
+                        <h3>Lorem ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi error molestiae sed asperiores sequi</p>
+                    </div>
+                </div>
+                <div id="sp"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>@Powered by Yasin Tan</p>
+        </div>
+    </div>
+</body>
+</html>

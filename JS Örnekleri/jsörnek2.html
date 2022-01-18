@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"><div id="demo2"></div></div>
+    <button onclick="myFunction()">Tıkla!!</button>
+    <script>
+        function myFunction(){
+            document.getElementById('demo').style.width = '200px';
+            document.getElementById('demo').style.height = '200px';
+            document.getElementById('demo').style.backgroundImage = 'linear-gradient(140deg, red, orange, yellow, yellowgreen, rgb(85, 168, 219), blue, purple)';
+            document.getElementById('demo').style.filter = 'blur(3px)';
+            document.getElementById('demo').style.margin = '100px';
+            document.getElementById('demo').style.position = 'relative';
+            document.getElementById('demo2').style.width = '195px';
+            document.getElementById('demo2').style.height = '195px';
+            document.getElementById('demo2').style.backgroundColor = 'black';
+            document.getElementById('demo2').style.position = 'absolute';
+            document.getElementById('demo2').style.filter = 'blur(0px)'
+        }
+    </script>
+</body>
+</html>

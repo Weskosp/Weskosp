@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Değişkenleri -->
+    <!-- JavaScript Değişkeni Bildirmenin 4 Yolu: -->
+    <!--
+        > var Kullanma
+        > let Kullanma
+        > const kullanma
+        > Hiç bir şey kullanmamak
+    -->
+
+
+    <!-- Değişkenler nedir? -->
+    <!-- Değişkenler, verileri depolamak (veri değerlerini depolamak) için kaplardır. -->
+    <!-- Bu örnekte, x, y ve z, var anahtar kelimeyle bildirilen değişkenlerdir : -->
+    <p id="demo"></p>
+    <script>
+        var x = 31;
+        var y = 30;
+        var z = x * y;
+        document.getElementById('demo').innerHTML = 'Değişkenin Değeri: ' + z;
+    </script>
+
+    <!-- Bu örnekte, x, y ve z, let anahtar kelimeyle bildirilen değişkenlerdir : -->
+    <p id="demo2"></p>
+    <script>
+        let a = 31;
+        let b = 32;
+        let c = a / b;
+        document.getElementById('demo2').innerHTML = 'Değişkenin Değeri: ' + c;
+    </script>
+
+    <!-- Bu örnekte, x, y ve z, bildirilmemiş değişkenlerdir: -->
+    <p id="demo3"></p>
+    <script>
+        s = 12;
+        p = 31;
+        i = s - p;
+        document.getElementById('demo3').innerHTML = 'Değişkenin Değeri: ' + i;
+    </script>
+
+    <!-- JavaScript var Ne Zaman Kullanılır? -->
+    <!-- JavaScript değişkenlerini her zaman var,let, ya da const ile bildirin. -->
+    <!-- var anahtar sözcüğü, 1995'ten 2015'e kadar tüm JavaScript kodlarında kullanılır. -->
+    <!-- let ve const anahtar kelimeleri 2015 yılında JavaScript'e eklendi. -->
+    <!-- Kodunuzun daha eski bir tarayıcıda çalışmasını istiyorsanız, var'ı kullanmalısınız. -->
+
+
+    <!-- JavaScript const Ne Zaman Kullanılır? -->
+    <!-- Genel bir kural istiyorsanız: değişkenleri her zaman const ile bildirin. -->
+    <!-- Değişkenin değerinin değişebileceğini düşünüyorsanız, let'i kullanın. -->
+    <!-- Bu örnekte, price1, price2 ve total, değişkenlerdir: -->
+    <p id="demo4"></p>
+    <script>
+        const fiyat1 = 2;
+        const fiyat2 = 41;
+        let toplam = fiyat1 + fiyat2;
+        document.getElementById('demo4').innerHTML = 'Bu ürünün toplamı: ' + toplam;
+    </script>
+
+    <!--
+        İki değişken price1 ve anahtar kelime price2 ile bildirilir const.
+
+        Bunlar sabit değerlerdir ve değiştirilemez.
+
+        Değişken anahtar kelime total ile bildirilir let.
+
+        Bu değiştirilebilir bir değerdir.
+    -->
+
+
+    <!-- Cebir gibi -->
+    <!-- Tıpkı cebirde olduğu gibi, değişkenler değerleri tutar: -->
+    <script>
+        let x = 31, y = 31;
+    </script>
+
+    <!-- Cebirde olduğu gibi, değişkenler ifadelerde kullanılır: -->
+    <script>
+        let z = x + y;
+    </script>
+
+    <!-- Yukarıdaki örnekten toplamın 11 olarak hesaplandığını tahmin edebilirsiniz. -->
+    <!-- NOT: Değişkenler, değerleri depolamak için kullanılan kaplardır. -->
+
+
+    <!-- JavaScript Tanımlayıcıları -->
+    <!--
+        Tüm JavaScript değişkenleri benzersiz adlarla tanımlanmalıdır.
+
+        Bu benzersiz adlara tanımlayıcılar denir.
+
+        Tanımlayıcılar kısa adlar (x ve y gibi) veya daha açıklayıcı adlar (yaş, toplam, toplamHacim) olabilir.
+
+        Değişkenler (benzersiz tanımlayıcılar) için ad oluşturmaya ilişkin genel kurallar şunlardır:
+
+            > Adlar harfler, rakamlar, alt çizgiler ve dolar işaretleri içerebilir.
+
+            > İsimler bir harfle başlamalıdır
+            
+            > İsimler $ ve _ ile de başlayabilir (ancak bu eğitimde kullanmayacağız)
+
+            > Adlar büyük/küçük harfe duyarlıdır (y ve Y farklı değişkenlerdir)
+
+            > Ayrılmış kelimeler (JavaScript anahtar kelimeleri gibi) ad olarak kullanılamaz
+
+        NOT: JavaScript tanımlayıcıları büyük/küçük harf duyarlıdır.
+    -->
+
+
+    <!-- Atama Operatörü -->
+    <!-- JavaScript'te eşittir işareti (=), bir "eşittir" operatörü değil, bir "atama" operatörüdür. -->
+    <!-- Bu cebirden farklıdır. Aşağıdakiler cebirde bir anlam ifade etmez: -->
+    <p id="demo5"></p>
+    <script>
+        let g = g + 5;
+        document.getElementById('demo5').innerHTML = 'Sonuç: ' + g;
+    </script>
+    <!--
+        Ancak JavaScript'te bu çok mantıklı: x + 5'in değerini x'e atar.
+
+        (x + 5 değerini hesaplar ve sonucu x'e koyar. x'in değeri 5 artırılır.)
+
+        NOT: "Eşittir" operatörü == JavaScript'teki gibi yazılmıştır .
+    -->
+
+
+    <!-- JavaScript Veri Türleri -->
+    <!--
+        JavaScript değişkenleri 100 gibi sayıları ve "John Doe" gibi metin değerlerini tutabilir.
+
+        Programlamada metin değerlerine metin dizeleri denir.
+
+        JavaScript birçok veri türünü işleyebilir, ancak şimdilik sadece sayıları ve dizeleri düşünün.
+
+        Dizeler çift veya tek tırnak içine yazılır. Rakamlar tırnak işaretleri olmadan yazılır.
+
+        Bir sayıyı tırnak içine alırsanız, metin dizesi olarak kabul edilecektir.
+    -->
+    <script>
+        const pi = 3.14;
+        let person = "John Doe";
+        let answer = 'Yes I am!';
+    </script>
+
+    
+    <!-- JavaScript Değişkeni Bildirmek -->
+    <!--
+        JavaScript'te bir değişken oluşturmaya, bir değişken "bildirmek" denir.
+
+        var veya let anahtar sözcüğüyle bir JavaScript değişkeni bildirirsiniz:
+    -->
+    <script>
+        var carName;
+        //veya
+        let carName;
+    </script>
+
+    <!--
+        Bildirimden sonra değişkenin değeri yoktur (teknik olarak tanımsızdır).
+
+        Değişkene bir değer atamak için eşittir işaretini kullanın:
+    -->
+    <script>
+        carName = "Volvo";
+    </script>
+
+    <!-- Ayrıca, onu bildirdiğinizde değişkene bir değer atayabilirsiniz: -->
+    <script>
+        let carName = "Volvo";
+    </script>
+
+    <!--
+        Aşağıdaki örnekte, adında bir değişken oluşturup buna carName"Volvo" değerini atadık.
+
+        Ardından, id="demo" ile bir HTML paragrafının içindeki değeri "çıkarırız":
+    -->
+    <p id="demo6"></p>
+    <script>
+        let carName1 = "Volvo";
+        document.getElementById("demo6").innerHTML = carName1;
+    </script>
+    <!-- NOT: Bir betiğin başında tüm değişkenleri bildirmek iyi bir programlama uygulamasıdır. -->
+
+
+    <!-- Bir İfade, Birçok Değişken -->
+    <!--
+        Tek bir ifadede birçok değişken bildirebilirsiniz.
+
+        İfadeyi şu şekilde başlatın var ve değişkenleri virgülle ayırın :
+    -->
+    <script>
+        let person = "John Doe", carName = "Volvo", price = 200;
+        //Bir bildirim birden çok satıra yayılabilir:
+        let person = "John Doe",
+        carName = "Volvo",
+        price = 200;
+    </script>
+
+
+    <!-- Değer = tanımsız -->
+    <!-- 
+        Bilgisayar programlarında, değişkenler genellikle bir değer olmadan bildirilir. Değer, hesaplanması gereken bir şey veya kullanıcı girişi gibi daha sonra sağlanacak bir şey olabilir.
+
+        Değersiz olarak bildirilen bir değişken tanımsız değerine sahip olacaktır.
+
+        Bu ifadenin yürütülmesinden sonra carName değişkeni undefined değerine sahip olacaktır: 
+    -->
+    <p id="demo7"></p>
+    <script>
+        let carName31;
+        document.getElementById('demo7').innerHTML = 'Değer: ' + carName31;
+    </script>
+
+    
+    <!-- JavaScript Değişkenlerini Yeniden Bildirme -->
+    <!--
+        Var ile bildirilen bir JavaScript değişkenini yeniden bildirirseniz, değerini kaybetmez.
+
+        carName değişkeni, şu ifadelerin yürütülmesinden sonra hala "Volvo" değerine sahip olacaktır:
+    -->
+    <p id="demo8"></p>
+    <script>
+        var carName32 = "Volvo";
+        var carName32;
+        document.getElementById('demo8').innerHTML = 'Değer: ' + carName32;
+    </script>
+
+    <!--
+        NOT: let veya const ile bildirilen bir değişkeni yeniden bildiremezsiniz.
+        Bu işe yaramayacak:
+    -->
+    <p id="demo9"></p>
+    <script>
+        let carName14 = "Volvo";
+        let carName14;
+        document.getElementById('demo9').innerHTML = carName14;
+    </script>
+
+
+    <!-- JavaScript Aritmetiği -->
+    <!-- Cebirde olduğu gibi, = ve + gibi operatörleri kullanarak JavaScript değişkenleriyle aritmetik yapabilirsiniz: -->
+    <p id="demo10"></p>
+    <script>
+        let u = 5 + 2 + 3;
+        document.getElementById('demo10').innerHTML = u;
+    </script>
+
+    <!-- Ayrıca dizeler de ekleyebilirsiniz, ancak dizeler birleştirilir: -->
+    <p id="demo11"></p>
+    <script>
+        let l = "John" + " " + "Doe";
+        document.getElementById('demo11').innerHTML = l;
+    </script>
+
+    <!-- Ayrıca şunu deneyin: -->
+    <p id="demo12"></p>
+    <script>
+        let v = "5" + 2 + 3;
+        document.getElementById('demo12').innerHTML = v;
+    </script>
+    <!-- NOT: Bir sayıyı tırnak içine alırsanız, sayıların geri kalanı dizeler olarak ele alınır ve birleştirilir. -->
+    <!-- Şimdi şunu deneyin: -->
+    <p id="demo13"></p>
+    <script>
+        let k = 2 + 3 + "5";
+        document.getElementById('demo13').innerHTML = k;
+    </script>
+
+
+    <!-- JavaScript Dolar İşareti $ -->
+    <!-- JavaScript dolar işaretini bir harf olarak değerlendirdiğinden, $ içeren tanımlayıcılar geçerli değişken adlarıdır: -->
+    <script>
+        let $ = "Hello World";
+        let $$$ = 2;
+        let $myMoney = 5;
+    </script>
+    <!--
+        Dolar işaretinin kullanılması JavaScript'te çok yaygın değildir, ancak profesyonel programcılar genellikle bunu bir JavaScript kitaplığındaki ana işlev için bir takma ad olarak kullanır.
+
+        JavaScript kitaplığında jQuery, örneğin, $HTML öğelerini seçmek için ana işlev kullanılır. JQuery'de $("p");"tüm p öğelerini seç" anlamına gelir.
+    -->
+
+
+    <!-- JavaScript Alt Çizgisi (_) -->
+    <!-- JavaScript, alt çizgiyi bir harf olarak değerlendirdiğinden, _ içeren tanımlayıcılar geçerli değişken adlarıdır: -->
+    <script>
+        let _lastName = "Johnson";
+        let _x = 2;
+        let _100 = 5;
+    </script>
+    <!-- JavaScript'te alt çizgi kullanmak çok yaygın değildir, ancak profesyonel programcılar arasındaki bir kural, onu "özel (gizli)" değişkenler için bir takma ad olarak kullanmaktır. -->
+</body>
+</html>

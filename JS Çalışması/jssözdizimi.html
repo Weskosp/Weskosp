@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Değerleri -->
+    <!-- JavaScript sözdizimi iki tür değer tanımlar: -->
+    <!--
+        > Sabit değerler
+        > Değişken değerler
+    -->
+    <!-- Sabit değerlere DEĞİŞMEZLER denir. -->
+    <!-- Değişen Değerlere DEĞİŞSKENLER denir. -->
+
+
+    <!-- JavaScript Değişmezleri -->
+    <!-- Sabit değerler için en önemli iki sözdizimi kuralı şunlardır: -->
+    <!-- Sayılar ondalıklı veya ondalıksız yazılır: -->
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 10.50;
+        document.getElementById('demo2').innerHTML = 1001;
+    </script>
+
+    <!-- Dizeler , çift veya tek tırnak içinde yazılan metinlerdir: -->
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        document.getElementById('demo3').innerHTML = 'Yasin Tan';
+        document.getElementById("demo4").innerHTML = "Yasin Tan";
+    </script>
+
+
+    <!-- JavaScript Değişkenleri -->
+    <!-- Bir programlama dilinde, veri değerlerini depolamak için değişkenler kullanılır . -->
+    <!-- JavaScript, değişkenleri bildirmek için var, let ve const anahtar sözcüklerini kullanır. -->
+    <!-- Değişkenlere değer atamak için eşittir işareti(=) kullanılır. -->
+    <!-- Bu örnekte, x bir değişken olarak tanımlanmıştır. Ardından, x'e 6 değeri atanır (verilir): -->
+    <p id="demo5"></p>
+    <script>
+        let x;
+        x = 6;
+        document.getElementById('demo5').innerHTML = x; 
+    </script>
+
+
+    <!-- JavaScript Operatörleri -->
+    <!-- JavaScript, değerleri hesaplamak için aritmetik operatörleri ( + - * /) kullanır  -->
+    <p id="demo6"></p>
+    <script>
+        document.getElementById('demo6').innerHTML = (5 + 6) * 31;
+    </script>
+
+    <!-- JavaScript, değişkenlere değer atamak için bir atama operatörü (=) kullanır: -->
+    <p id="demo7"></p>
+    <script>
+        let z, y, c;
+        z = 5;
+        y = 31;
+        c = x * y;
+        document.getElementById('demo7').innerHTML = c; 
+    </script>
+
+
+    <!-- JavaScript İfadeleri -->
+    <!-- Bir ifade, bir değeri hesaplayan değerlerin, değişkenlerin ve işleçlerin birleşimidir. -->
+    <!-- Hesaplamaya değerlendirme denir. -->
+    <!-- Örneğin, 5 * 10, 50 olarak değerlendirilir: -->
+    <p id="demo8"></p>
+    <script>
+        document.getElementById('demo8').innerHTML = 5 * 10;
+    </script>
+
+    <!-- İfadeler ayrıca değişken değerler içerebilir: -->
+    <p id="demo9"></p>
+    <script>
+        var b;
+        b = 5
+        document.getElementById('demo9').innerHTML = b * 31;
+    </script>
+
+    <!-- Değerler, sayılar ve dizeler gibi çeşitli türlerde olabilir. -->
+    <!-- Örneğin, "John" + " " + "Doe", "John Doe" olarak değerlendirilir: -->
+    <p id="demo10"></p>
+    <script>
+        document.getElementById('demo10').innerHTML = 'Yasin' + ' ' + 'Tan';
+    </script>
+
+
+    <!-- JavaScript Anahtar Kelimeleri -->
+    <!-- JavaScript anahtar sözcükleri , gerçekleştirilecek eylemleri belirlemek için kullanılır. -->
+    <!-- let anahtar sözcüğü, tarayıcıya değişkenler oluşturmasını söyler: -->
+    <p id="demo11"></p>
+    <script>
+        let v, f;
+        v = 5 + 6;
+        y = v * 31;
+        document.getElementById('demo11').innerHTML = y;
+    </script>
+
+    <!-- var anahtar sözcüğü ayrıca tarayıcıya değişkenler oluşturmasını söyler: -->
+    <p id="demo12"></p>
+    <script>
+        var h, u;
+        h = 5 + 6;
+        u = h * 69;
+        document.getElementById('demo12').innerHTML = u;
+    </script>
+
+    <!-- Bu örneklerde, var ya da kullanmak let aynı sonucu verecektir. -->
+    <!-- Bu eğitimde var ve let daha sonra hakkında daha fazla bilgi edineceksiniz . -->
+
+
+    <!-- JavaScript Yorumları -->
+    <!-- Tüm JavaScript ifadeleri "yürütülmez". -->
+    <!-- Çift eğik çizgiden sonra // veya /* ile */ arasındaki kod, yorum olarak kabul edilir. -->
+    <!-- Yorumlar yoksayılır ve yürütülmez: -->
+    <p id="demo13"></p>
+    <script>
+        let k = 5; // Yeşil Alan sadece yorum içindir yürütülmez
+        document.getElementById('demo13').innerHTML = k;
+    </script>
+
+    <!-- Daha sonraki bir bölümde yorumlar hakkında daha fazla bilgi edineceksiniz. -->
+    
+
+    <!-- JavaScript Tanımlayıcıları / Adları -->
+    <!-- Tanımlayıcılar JavaScript adlarıdır. -->
+    <!-- Tanımlayıcılar, değişkenleri, anahtar kelimeleri ve işlevleri adlandırmak için kullanılır. -->
+    <!-- Yasal adlar için kurallar çoğu programlama dilinde aynıdır. -->
+    <!-- Bir JavaScript adı şununla başlamalıdır: -->
+    <!--
+        > Bir harf (AZ veya az)
+        > Dolar işareti ($)
+        > Veya bir alt çizgi (_)
+    -->
+    <!-- Sonraki karakterler harfler, rakamlar, alt çizgiler veya dolar işaretleri olabilir. -->
+
+    <!-- NOT: İsimlerde ilk karakter olarak sayılara izin verilmez.-->
+    <!-- Bu şekilde JavaScript, tanımlayıcıları sayılardan kolayca ayırt edebilir. -->
+
+
+    <!-- JavaScript Büyük/Küçük Harfe Duyarlıdır -->
+    <!-- Tüm JavaScript tanımlayıcıları büyük/ küçük harf duyarlıdır .  -->
+    <!-- Değişkenler lastName ve lastname iki farklı değişkenler şunlardır: -->
+    <p id="demo14"></p>
+    <script>
+        let lastname, lastName;
+        lastName = 'Yasin';
+        lastname = 'Peterson';
+        document.getElementById('demo14').innerHTML = lastName; //Farkı görmek için değişkenin adını değiştirin
+    </script>
+    <!-- JavaScript, LET veya Let'i let anahtar sözcüğü olarak yorumlamaz. -->
+
+
+    <!-- JavaScript ve Camel Case -->
+    <!-- Tarihsel olarak, programcılar birden çok kelimeyi tek bir değişken adına birleştirmenin farklı yollarını kullandılar: -->
+
+    <!-- tireler: -->
+    <!-- first-name, last-name, master-card, inter-city. -->
+
+    <!-- JavaScript'te tirelere izin verilmez. Çıkarma işlemleri için ayrılmıştır. -->
+
+    <!-- Vurgulamak: -->
+    <!-- first_name, last_name, master_card, inter_city. -->
+
+    <!-- Üst Camel Case (Pascal kasası): -->
+    <!-- FirstName, LastName, MasterCard, InterCity. -->
+
+    <!-- Alt Camel Case: -->
+    <!-- JavaScript programcıları, küçük harfle başlayan büyük harf kullanma eğilimindedir: -->
+    <!-- firstName, lastName, masterCard, interCity. -->
+
+
+    <!-- JavaScript Karakter Seti -->
+    <!-- JavaScript, Unicode karakter kümesini kullanır . -->
+    <!-- Unicode, dünyadaki (neredeyse) tüm karakterleri, noktalama işaretlerini ve sembolleri kapsar. -->
+</body>
+</html>

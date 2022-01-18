@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JavaScript Let -->
+    <!-- Yeniden Beyan Edilemez -->
+    <!--
+        let ile tanımlanan değişkenler yeniden tanımlanamaz.
+
+        Bir değişkeni yanlışlıkla yeniden bildiremezsiniz.
+
+        let ile bunu yapamazsınız:
+    -->
+    <script>
+        let x = "John Doe";
+        let x = 0;
+    </script>
+    <!-- Şunları var ile yapabilirsiniz: -->
+    <script>
+        var x = "John Doe";
+        var x = 0;
+    </script>
+
+
+    <!-- Blok Kapsamı -->
+    <!--
+        ES6'dan (2015) önce JavaScript'te yalnızca Global Scope ve Function Scope vardı .
+
+        ES6, iki önemli yeni JavaScript anahtar sözcüğünü tanıttı: letve const.
+
+        Bu iki anahtar kelime , JavaScript'te Blok Kapsamı sağlar.
+
+        Bir { } bloğu içinde bildirilen değişkenlere bloğun dışından erişilemez:
+    -->
+    <script>
+        {
+            let x = 2;
+        }
+    </script>
+
+    <!--
+        var anahtar sözcüğü ile bildirilen değişkenler blok kapsamına sahip olamaz.
+
+        Bir { } bloğu içinde tanımlanan değişkenlere bloğun dışından erişilebilir.
+    -->
+    <script>
+        {
+            var x = 2;
+        }
+    </script>
+
+
+    <!-- Değişkenleri Yeniden Tanımlamak -->
+    <!--
+        var Anahtar kelimeyi kullanarak bir değişkeni yeniden bildirmek, sorunlara neden olabilir.
+
+        Bir blok içindeki bir değişkeni yeniden bildirmek, değişkeni bloğun dışında da yeniden bildirir:
+    -->
+    <p id="demo"></p>
+    <script>
+        var x = 10;
+        {
+            var x = 2;
+        }
+        document.getElementById('demo').innerHTML = x;
+    </script>
+
+    <!--
+        Anahtar kelimeyi kullanarak bir değişkeni yeniden bildirmek letbu sorunu çözebilir.
+
+        Bir blok içindeki bir değişkeni yeniden bildirmek, değişkeni bloğun dışında yeniden bildirmez:
+    -->
+    <p id="demo2"></p>
+    <script>
+        let y = 10;
+        {
+            let y = 2;
+        }
+        document.getElementById('demo2').innerHTML = y;
+    </script>
+
+
+    <!-- yeniden beyan -->
+    <!-- Bir programda herhangi bir yerde bir JavaScript değişkeninin yeniden bildirilmesine var izin verilir: -->
+    <p id="demo3"></p>
+    <script>
+        var z = 2;
+        // Şimdi x is 2
+
+        var z = 3;
+        // Şimdi x is 3
+
+        document.getElementById('demo3').innerHTML = z;
+    </script>
+
+    <!-- let ile aynı blokta bir değişkenin yeniden bildirilmesine izin VERİLMEZ: -->
+    <script>
+        var x = 2;    // izin verilmiş
+        let x = 3;    // izin verilmemiş
+
+        {
+            let x = 2;    // izin verilmiş
+            let x = 3     // izin verilmemiş
+        }
+
+        {
+            let x = 2;    // izin verilmiş
+            var x = 3     // izin verilmemişd
+        }
+    </script>
+
+    <!-- Bir değişkeni let ile yeniden bildirmek, başka bir blokta IS'ye izin verilir: -->
+    <p id="demo4"></p>
+    <script>
+        let r = 2;    // izin verilmiş
+
+        {
+        let r = 3;    // izin verilmiş
+        }
+
+        {
+        let r = 4;    // izin verilmiş
+        }
+        document.getElementById('demo4').innerHTML = r;
+    </script>
+
+
+    <!-- Kaldırma -->
+    <!--
+        var ile tanımlanan değişkenler yukarı kaldırılır ve herhangi bir zamanda başlatılabilir.
+
+        Anlamı: Değişkeni bildirilmeden önce kullanabilirsiniz:
+    -->
+    <p id="demo5"></p>
+    <script>
+        carName31 = "Volvo";
+        var carName31;
+        document.getElementById('demo5').innerHTML = carName31;
+    </script>
+
+    <!--
+        let ile tanımlanan değişkenler de bloğun en üstüne kaldırılır, ancak başlatılmaz.
+
+        Anlamı: Bir let değişkenini bildirilmeden önce kullanmak, ReferenceError ile sonuçlanacaktır:
+    -->
+    <p id="demo6"></p>
+    <script>
+        carName = "Saab";
+        let carName = "Volvo";
+        document.getElementById('demo6').innerHTML = carName;
+    </script>
+</body>
+</html>

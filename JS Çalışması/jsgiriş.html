@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .aharfi{
+            word-spacing: 30px;
+            border: 5px solid lawngreen;
+        }
+        input:focus{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- JavaScript HTML İçeriğini Değiştirebilir -->
+    <!-- Birçok JavaScript HTML yönteminden biri getElementById(). -->
+
+    <!-- onclick: onclick özelliği, öğeye fareyle tıklandığında tetiklenir. -->
+    <!-- onclick niteliği, Etkinlik Niteliklerinin bir parçasıdır ve herhangi bir HTML öğesinde kullanılabilir. -->
+    <p id="onclick-demo" onclick="document.getElementById('onclick-demo').style.fontSize = '30px', document.getElementById('onclick-demo').style.backgroundImage = 'linear-gradient(to right, red, yellowgreen, lightblue)', document.getElementById('onclick-demo').innerHTML = 'Bu Paragrafta Stil Uygulanmıştır.', document.getElementById('onclick-demo').className = 'aharfi'">Paragraf üzerinde değişiklik yapmak için tıklayın.</p>
+    <p><a href="" id="ondemo" onclick="document.getElementById('ondemo').style.marginLeft = '300px', document.getElementById('ondemo').className = 'aharfi'">Bağlantıya Tıkla!</a></p>
+    <p>Adınız: <input type="text" id="ondemo2" onclick="document.getElementById('ondemo2').type = 'number'"></p>
+
+    <!-- Aşağıdaki örnek, bir HTML öğesini (id="demo" ile) "bulur" ve öğe içeriğini (innerHTML) "Merhaba JavaScript" olarak değiştirir: -->
+    <h1>JavaScript Giriş</h1>
+    <p id="demo">JavaScript HTML içeriğini değiştirebilir.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Merhaba JavaScript'">Tıkla!</button>
+
+    <!-- JavaScript hem çift hem de tek tırnak kabul eder: -->
+    <p id="demo2">JavaScript HTML içeriğini değiştirebilir.</p>
+    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Merhaba JavaScript"'>Tıkla!</button><br><br><br><br>
+
+    <!-- JavaScript, HTML Özellik Değerlerini Değiştirebilir -->
+    <button type="button" onclick="document.getElementById('resmim').src = 'resimler/hqdefault2.jpg'">The Rock ~-</button>
+    <img src="resimler/hqdefault.jpg" id="resmim" width="100">
+    <button onclick="document.getElementById('resmim').src = 'resimler/hqdefault.jpg'">The Rock</button><br><br><br><br>
+    
+    <!-- JavaScript, HTML Stillerini Değiştirebilir (CSS) -->
+
+    <!-- Bir HTML öğesinin stilini değiştirmek, bir HTML niteliğini değiştirmenin bir çeşididir: -->
+    <p id="demo3">Yazıyı Büyütmek İçin Tıklayın.</p>
+    <button onclick="document.getElementById('demo3').style.fontSize = '35px'">Tıkla!</button><br><br><br><br>
+
+    <!-- JavaScript HTML Öğelerini Gizleyebilir -->
+
+    <!-- HTML öğelerini gizlemek, display stil değiştirilerek yapılabilir : -->
+    <p id="demo4">Gizlemek İçin Tıklayın.</p>
+    <button onclick="document.getElementById('demo4').style.display = 'none'">Gizle</button>
+    <!-- JavaScript HTML Öğelerini Gösterebilir -->
+    <!-- Gizli HTML öğelerini gösterme, displaystil değiştirilerek de yapılabilir : -->
+    <button onclick="document.getElementById('demo4').style.display = 'block'">Göster</button><br><br><br><br>
+
+    <!-- Tek butonla bir'den fazla onclick ögesi yerleştirebilir -->
+    <p id="demo5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, hic voluptas officiis laboriosam nemo maxime deleniti tempore ducimus facilis quasi excepturi vitae quaerat beatae delectus ex eius! Et, autem praesentium?</p>
+    <button onclick="document.getElementById('demo5').style.fontSize = '35px', document.getElementById('demo5').style.color = 'green', document.getElementById('demo5').style.letterSpacing = '20px'">Değiştir!</button><br><br><br><br>
+
+    <!-- Tek butonla bir'den fazla öğeleri değiştirebilir -->
+    <p id="demo6">Bu bir paragraf...</p><br><br>
+    <div id="divdemo">Merhaba JavaScript</div><br><br>
+    <button onclick="document.getElementById('demo6').style.fontSize = '30px',document.getElementById('demo6').innerHTML = 'Lorem ipsum sit amet', document.getElementById('divdemo').style.width = '100px', document.getElementById('divdemo').style.height = '100px', document.getElementById('divdemo').style.backgroundColor = 'blue', document.getElementById('divdemo').style.border = '5px solid black'">Değiştir!</button>
+
+    <!-- Biliyor musun? -->
+    <!-- JavaScript ve Java , hem konsept hem de tasarım olarak tamamen farklı dillerdir. -->
+    <!-- JavaScript, Brendan Eich tarafından 1995 yılında icat edildi ve 1997'de bir ECMA standardı haline geldi. -->
+    <!-- ECMA-262, standardın resmi adıdır. ECMAScript, dilin resmi adıdır. -->
+</body> 
+</html>

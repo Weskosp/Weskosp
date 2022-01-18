@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <head> içindeki JavaScript -->
+    <!-- Bu örnekte, bir HTML sayfasının bölümüne bir JavaScript function(işlev) yerleştirilmiştir <head>. -->
+    <!-- Bir düğmeye tıklandığında işlev çağrılır (çağrılır): -->
+    <script>
+        function myFunction(){
+            document.getElementById('demo2').innerHTML = 'Paragraf Değişti!!!';
+        }
+    </script>
+</head>
+<body>
+    <!-- <script> Etiketi -->
+    <!-- HTML'de JavaScript kodu <script>ve </script>etiketleri arasına eklenir . -->
+    <p id="demo"></p>
+    <script>
+        document.getElementById('demo').innerHTML = 'İlk JavaScriptim.';
+    </script>
+
+
+    <!-- Eski JavaScript örnekleri, bir tür niteliği kullanabilir: <script type="text/javascript">. -->
+    <!-- type özelliği gerekli değildir. JavaScript, HTML'deki varsayılan komut dosyası dilidir. -->
+
+
+    <!-- JavaScript İşlevleri ve Olayları -->
+    <!-- JavaScript function(işlev), "çağrıldığında" çalıştırılabilen bir JavaScript kodu bloğudur. -->
+    <!-- Örneğin , kullanıcının bir düğmeyi tıklaması gibi bir olay meydana geldiğinde bir işlev çağrılabilir . -->
+    <!-- Sonraki bölümlerde işlevler ve olaylar hakkında çok daha fazla bilgi edineceksiniz. -->
+
+
+    <!-- <head> veya <body> içinde JavaScript -->
+    <!-- Bir HTML belgesine istediğiniz sayıda komut dosyası yerleştirebilirsiniz. -->
+    <!-- Komut dosyaları, bir HTML sayfasının bölümüne <body>veya <head>bölümüne veya her ikisine birden yerleştirilebilir. -->
+
+
+    <!-- <head> içindeki JavaScript  örneği-->
+    <p id="demo2">Bu bir paragraf</p>
+    <button onclick="myFunction()">Değiştir!</button><br>
+
+
+    <!-- <body> içindeki JavaScript -->
+    <!-- Bu örnekte, bir HTML sayfasının bölümüne bir JavaScript function(işlev) yerleştirilmiştir <body>. -->
+    <!-- Bir düğmeye tıklandığında işlev çağrılır (çağrılır): -->
+    <p id="demo3">Bu bir Paragraf</p>
+    <button onclick="JSoğreniyom()">Değiştir!!</button>
+    <script>
+        function JSoğreniyom(){
+            document.getElementById('demo3').innerHTML = 'Bu paragraf değişmiştir.'
+        }
+    </script>
+    <!-- Komut dosyalarının <body> öğesinin altına yerleştirilmesi görüntüleme hızını artırır, çünkü komut dosyası yorumlama ekranı yavaşlatır. -->
+
+
+    <!-- Harici JavaScript -->
+    <!-- Komut dosyaları ayrıca harici dosyalara da yerleştirilebilir: -->
+    <!-- Harici dosya: benimScript.js -->
+    <p id="demo4">Bu bir Paragraf</p>
+    <button onclick="benimFunction()">Değiştir!!!</button>
+    <!-- Harici bir komut dosyası kullanmak için komut dosyasının adını src bir <script> etiketin (kaynak) özniteliğine girin : -->
+    <script src="JS dosyaları/benimScript.js"></script>
+    <!-- Aynı kod birçok farklı web sayfasında kullanıldığında harici komut dosyaları pratiktir. -->
+    <!-- JavaScript dosyaları .js dosya uzantısına sahiptir . -->
+    <!-- Harici bir komut dosyası referansını istediğiniz gibi <head> veya içine yerleştirebilirsiniz <body>. -->
+    <!-- Komut dosyası, tam olarak <script>etiketin bulunduğu yerdeymiş gibi davranacaktır . -->
+    <!-- Harici komut dosyaları <script>etiket içeremez . -->
+
+
+    <!-- Harici JavaScript Avantajları -->
+    <!-- 
+        > HTML ve kodu ayırır
+        > HTML ve JavaScript'in okunmasını ve bakımını kolaylaştırır
+        > Önbelleğe alınmış JavaScript dosyaları sayfa yüklemelerini hızlandırabilir
+    -->
+    <!-- Bir sayfaya birkaç komut dosyası eklemek için - birkaç komut dosyası etiketi kullanın: -->
+    <script src="JS dosyaları/benimScript2.js"></script>
+    <script src="JS dosyaları/benimScript3.js"></script>
+
+
+    <!-- Dış Referanslar -->
+    <!-- Harici bir komut dosyasına 3 farklı şekilde başvurulabilir: -->
+    <!-- 
+        > Tam URL ile (tam web adresi)
+        > Bir dosya yolu ile (/js/ gibi)
+        > Herhangi bir yol olmadan
+    -->
+    <!-- Bu örnek, benimScript.js'ye bağlanmak için tam bir URL kullanır : -->
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+    
+    <!-- Bu örnek, benimScript.js'ye bağlanmak için bir dosya yolu kullanır : -->
+    <script src="/js/myScript.js"></script>
+
+    <!-- Bu örnek, myScript.js'ye bağlanmak için yol kullanmaz: -->
+    <script src="myScript.js"></script>
+</body>
+</html>

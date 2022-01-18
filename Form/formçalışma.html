@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+        }
+        fieldset{
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form action="" oninput="outpt.value=parseInt(range.value)">
+        <fieldset>
+            <legend>KAYIT OL</legend>
+            <table>
+                <tr>
+                    <td>Arama</td>
+                    <td><input type="search" name="form" id="arama" placeholder="Arama"></td>
+                </tr>
+                <tr>
+                    <td>Kullanıcı Adı:</td>
+                    <td>
+                        <input type="text" name="form" id="kullanici" list="isim" placeholder="Kullanıcı adını giriniz">
+                        <datalist id="isim">
+                            <option value="Yasin">Yasin</option>
+                            <option>Ahmet</option>
+                            <option>Zeki</option>
+                            <option>Niğmet</option>
+                            <option>Furkan</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Şifre:</td>
+                    <td><input type="password" name="form" id="sifre" placeholder="Şifrenizi giriniz"></td>
+                </tr>
+                <tr>
+                    <td>E-posta</td>
+                    <td><input type="email" name="form" id="eposta" placeholder="E-postanızı giriniz"></td>
+                </tr>
+                <tr>
+                    <td>Şehir:</td>
+                    <td>
+                        <select name="form" id="sehir">
+                            <option value="istanbul">İstanbul</option>
+                            <option value="ankara">Ankara</option>
+                            <option value="tokat">Tokat</option>
+                            <option value="canakkale">Çanakkale</option>
+                            <option value="ordu" selected>Ordu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gezdiğin Ülkeler:</td>
+                    <td>
+                        <select name="form" id="gezdiginulke" multiple size="2" style="width: 120px;text-align: center;">
+                            <optgroup label="Avrupa">
+                                <option value="almanya">Almanya</option>
+                                <option value="danimarka">Danimarka</option>
+                                <option value="bulgaristan">Bulgaristan</option>
+                                <option value="belcika">Belçika</option>
+                                <option value="finlandiya">Finlandiya</option>
+                            </optgroup>
+                            <optgroup label="Asya">
+                                <option value="turkmenistan">Türkmenistan</option>
+                                <option value="ozbekistan">Özbekistan</option>
+                                <option value="kirgizistan">Kırgızistan</option>
+                                <option value="tacikistan">Tacikistan</option>
+                                <option value="maldivler">Maldivler</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet:</td>
+                    <td>
+                        <input type="radio" name="form" id="erkek">
+                        <label for="erkek">Erkek</label>
+                        <input type="radio" name="form" id="kiz">
+                        <label for="kiz">Kız</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobileriniz:</td>
+                    <td>
+                        <input type="checkbox" name="form" id="eglence">
+                        <label for="eglence">Eğlence</label>
+                        <input type="checkbox" name="form" id="int">
+                        <label for="int">İnternet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TC No:</td>
+                    <td><input type="number" name="form" id="tcno" maxlength="11" placeholder="En fazla 11 karakter"></td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihiniz:</td>
+                    <td>
+                        <input type="date" name="form" id="zaman"><br>
+                        <input type="datetime" name="form" id="zaman2"><br>
+                        <input type="datetime-local" name="form" id="zaman3"><br>
+                        <input type="time" name="form" id="zaman4"><br>
+                        <input type="week" name="form" id="zaman5"><br>
+                        <input type="month" name="form" id="zaman6">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favori renginiz:</td>
+                    <td><input type="color" name="form" id="renk"></td>
+                </tr>
+                <tr>
+                    <td>Dosya Seç:</td>
+                    <td><input type="file" name="form" id="dosya"></td>
+                </tr>
+                <tr>
+                    <td>Ses (0-100):</td>
+                    <td>
+                        0<input type="range" min="0" max="100" name="form" id="range">100 =
+                        <output name="form" id="outpt" for="range"></output>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numara:</td>
+                    <td><input type="tel" name="form" id="tel" placeholder="+90"></td>
+                </tr>
+                <tr>
+                    <td>URL:</td>
+                    <td><input type="url" name="form" id="url"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="image" src="sagok.png" alt="submit" width="50" height="50"><br>
+                        <input type="submit" value="GÖNDER"><br>
+                        <button type="button" onclick="alert('superidol')">Tıkla Bana</button><br>
+                        <input type="button" value="Gönder"><br><!-- (Çoğunlukla bir komut dosyası etkinleştirmek için bir JavaScript kullanılır) tıklanabilir bir düğme tanımlar. -->
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

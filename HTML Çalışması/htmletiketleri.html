@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Etiket HTML belgesinin hakkında meta tanımlar. Meta veriler, veriler hakkındaki verilerdir (bilgi).
+        etiketler her zaman <head> öğesinin içine girer ve genellikle karakter kümesini, sayfa açıklamasını, anahtar sözcükleri, belgenin yazarını ve görünüm penceresi ayarlarını belirtmek için kullanılır.
+        Meta veriler sayfada görüntülenmez, ancak makineyle ayrıştırılabilir.
+        Meta veriler, tarayıcılar (içeriğin nasıl görüntüleneceği veya sayfanın nasıl yeniden yükleneceği), arama motorları (anahtar kelimeler) ve diğer web hizmetleri tarafından kullanılır.
+        Web tasarımcılarının <meta>etiket aracılığıyla görünüm alanı (bir web sayfasının kullanıcının görünür alanı) üzerinde kontrolü ele geçirmesine izin veren bir yöntem vardır
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Etiket geçerli belge ve harici kaynak arasındaki ilişkiyi tanımlar. Etiket en sık dış stil sayfaları bağlamak veya eklemek için kullanılır favicon web -->
+    <base href="https://www.w3schools.com/tags/tag_base.asp" target="_blank"> <!-- Etiketi, bir belgedeki tüm göreli URL'ler için temel URL ve / veya hedef belirler. Etiketi, href veya bir hedef niteliği hediye veya ikisi birden sahip olması gerekir. Bir belgede yalnızca tek bir öğe olabilir ve bu öğe <head> öğesinin içinde olmalıdır.         -->
+</head>
+<body>
+    <p><abbr title="Türkiye Büyük Millet Meclisi">T.B.M.M</abbr></p><!-- Etiket "HTML", "CSS", "Bay", "Dr", "ASAP", "ATM" gibi bir kısaltma ya da bir kısaltma tanımlar. -->
+
+    <address><!-- Etiketi, bir belge veya bir makalenin yazarı / sahibinin iletişim bilgileri tanımlar. -->
+        İletişim Bilgileri:<br>
+        E-posta için <a href="mailto:tanyasin073@gmail.com">tıklayın</a>
+    </address>
+
+    <img src="images.png" width="200" height="200" usemap="#sekiller">
+    <map name="sekiller">
+        <area shape="square" coords="" href=""><!-- Etiketi, bir resim haritası (bir resim haritası tıklanabilir alanlar ile bir görüntü) içindeki bir alanı tanımlar. (öğeler her zaman bir <map> etiketin içinde yuvalanır .) -->
+    </map>
+
+    <article><!-- Etiketi bağımsız, kendi kendine yeten içeriği belirtir. Bir makale kendi başına anlamlı olmalı ve sitenin geri kalanından bağımsız olarak dağıtılabilir olmalıdır. -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore laboriosam ratione odio, ullam totam, facere nihil reprehenderit fugit pariatur, error iste nesciunt quae corporis tempora qui consequuntur placeat porro esse!</p>
+    </article>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium alias officia vero praesentium delectus et sequi hic aliquid totam asperiores vitae quibusdam, cupiditate provident voluptatum eaque quos. Assumenda, accusantium neque.</p>
+    </article>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis error tempora inventore atque libero, ipsam facilis, ducimus cumque, distinctio quam cupiditate molestiae est consectetur amet? Porro sit beatae itaque ad.</p>
+    <aside> <!-- Etiketi yerleştirilir içerikten kenara biraz içeriğini tanımlar. Kenar içeriği dolaylı olarak çevreleyen içerikle ilgili olmalıdır. -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In exercitationem eveniet, accusantium animi recusandae harum sunt voluptatem eius assumenda deserunt non tempora distinctio excepturi, aut dolore libero laborum. Itaque, corrupti?</p>
+    </aside>
+
+    <audio controls> <!-- Etiket müzik veya diğer ses akışları gibi, bir belgede gömmek ses içeriği için kullanılır. Etiketi, bir veya daha fazla içeren <source> farklı ses kaynakları ile etiketleri. Tarayıcı, desteklediği ilk kaynağı seçecektir. -->
+        <source src=""> <!-- Etiketi gibi medya unsurları için birden çok medya kaynakları, belirtmek için kullanılır <video> , <audio> ve <resme>. Etiket, tarayıcı desteği veya görüntü kutusu genişliği dayalı tarayıcı arasından seçim olabilir alternatif video / ses / görüntü dosyalarını, belirlemenizi sağlar. Tarayıcı ilk <source> desteklediğini seçecektir. -->
+    </audio>
+
+    <ul>
+        <li>Kullanıcı <bdi>Bune</bdi>: Anlamadım</li> <!-- Etiketi, dışındaki diğer metinden farklı bir yönde biçimlendirilmiş olabilir metnin bir kısmını izole eder. -->
+    </ul>
+
+    <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci quam totam temporibus corrupti sunt repudiandae autem nihil quisquam accusamus eum ab aperiam, saepe quas nobis praesentium libero natus cumque.</bdo>
+    <!-- Etiket geçerli metin yönünü geçersiz kılmak için kullanılır. -->
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html"> <!-- Etiketi başka bir kaynaktan alıntı bir bölümü belirtir. -->
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <button type="button">Click Me!</button>
+    <!--
+        Etiket tıklanabilir bir düğme tanımlar. Bir <button>öğenin içine metin (ve <i>, <b>, <strong>, <br>, <img>, vb. gibi etiketler) koyabilirsiniz. <input> Öğe ile oluşturulan bir düğme ile bu mümkün değildir!
+        Öznitelikleri:
+        
+        autofocus: Mevcut olduğunda, sayfa yüklendiğinde bir düğmenin otomatik olarak odaklanması gerektiğini belirtir.
+            KULLANIMI: <button type="button" autofocus>Click Me!</button>
+
+        disabled: Mevcut olduğunda, düğmenin devre dışı bırakılması gerektiğini belirtir.
+            KULLANIMI: <button type="button" disabled>Click Me!</button>
+
+        form="id": Bu özniteliğin değeri , aynı belgedeki idbir <form>öğenin özniteliğine eşit olmalıdır.
+            KULLANIMI:  <form action="/action_page.php" method="get" id="form1">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname">
+                        </form>
+                        <button type="submit" form="form1" value="Submit">Submit</button>
+
+        formaction: Bir form gönderildiğinde form-data gönderileceği yeri niteliği belirler. Bu öznitelik, formun özniteliğini geçersiz kılar action.
+            KULLANIMI:  <form action="/action_page.php" method="get">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <button type="submit">Submit</button>
+                            <button type="submit" formaction="/action_page2.php">Submit to another page</button>
+                        </form>
+        
+        formenctype: Form-data bir sunucuya göndermeden önce kodlanmış nasıl olması gerektiği nitelik belirtir. Bu öznitelik, formun özniteliğini geçersiz kılar enctype.
+            KULLANIMI:  <form action="/action_page_binary.asp" method="post">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname" value="Ståle"><br><br>
+                            <button type="submit">Submit with character encoding</button>
+                            <button type="submit" formenctype="text/plain">Submit without character encoding</button>
+                        </form>
+        
+        formmethod: Form verilerini gönderirken öznitelik belirtir olan HTTP yöntemi kullanmak için. Bu öznitelik, formun özniteliğini geçersiz kılar method.
+            KULLANIMI:  <form action="/action_page.php" method="get">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <button type="submit">Submit</button>
+                            <button type="submit" formmethod="post">Submit using POST</button>
+                        </form>
+        
+        formnovalidate: Mevcut olduğunda, form verilerinin gönderim sırasında doğrulanmaması gerektiğini belirtir. Bu öznitelik, formun özniteliğini geçersiz kılar novalidate.
+            KULLANIMI:  <form action="/action_page.php" method="get">
+                            <label for="email">Enter your email:</label>
+                            <input type="email" id="email" name="email"><br><br>
+                            <button type="submit">Submit</button>
+                            <button type="submit" formnovalidate>Submit without validation</button>
+                        </form>
+        
+        formtarget: Nitelik belirtir nerede formu gönderdikten sonra tepkisini göstermek için. Bu öznitelik, formun özniteliğini geçersiz kılar target.
+            KULLANIMI:  <form action="/action_page.php" method="get">
+                            <label for="fname">First name:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <button type="submit" >Submit</button>
+                            <button type="submit" formtarget="_blank">Submit to a new window</button>
+                        </form>
+    -->
+    <canvas id="myCanvas"> <!-- Etiket komut dosyası (genellikle JavaScript) üzerinden, anında, grafik çizmek için kullanılır. Etiket şeffaf ve sadece grafikler için, aslında grafik çizmek için bir komut dosyası kullanmalısınız bir kaptır. -->
+        Your browser does not support the canvas tag.
+    </canvas>  
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+
+    <table>
+        <caption>Monthly savings</caption> <!-- Etiketi bir tablo başlığını tanımlar. -->
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$50</td>
+        </tr>
+    </table>
+
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p> <!-- Etiket tanımlar yaratıcı çalışmanın başlığı (örneğin bir kitap, bir şiir, bir şarkı, bir film, bir resim, bir heykel, vs.). -->
+
+    <p>The HTML <code>button</code> tag defines a clickable button.</p> <!-- Etiket bir bilgisayar kodu parçasını tanımlamak için kullanılır. İçindeki içerik, tarayıcının varsayılan monospace yazı tipinde görüntülenir. -->
+    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+    <table>
+        <colgroup> <!-- Etiketi biçimlendirme için bir tabloda bir veya daha fazla sütun grubunu belirler. -->
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+    </table>
+
+    <ul> 
+        <li><data value="21053">Cherry Tomato</data></li> <!-- Etiketi, belirli bir içeriğin bir makine tarafından okunabilir çevirisini eklemek için kullanılır. -->
+        <li><data value="21054">Beef Tomato</data></li>
+        <li><data value="21055">Snack Tomato</data></li>
+    </ul>
+
+    <dl> <!-- Etiketi bir açıklama listesini tanımlar. -->
+        <dt>Coffee</dt> <!-- Etiketi bir açıklama listesinde bir terim / ad tanımlar. -->
+        <dd>Black hot drink</dd> <!-- Etiketi bir açıklama listesinde bir terim / ad tanımlamak için kullanılır. Etiketiyle birlikte kullanılır <dl> (tanımlayan bir açıklama listesi) ve <dt> (tanımlar terimleri / isim). etiketin içine paragraflar, satır sonları, resimler, bağlantılar, listeler vb. koyabilirsiniz. -->
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p> <!-- 
+        del: Bir belgeden silindi etiketi tanımlar metni. Tarayıcılar genellikle silinen metin üzerinden bir çizgi çizer. 
+        ins: Etiketi bir belgeye takılmış olan bir metni tanımlar. Tarayıcılar genellikle eklenen metnin altını çizer.
+    -->
+
+    <details> <!-- Etiketi kullanıcı açıp kapatmak talep üzerine ki ek ayrıntılar belirtir. --> <span style="color: brown;">ÖNEMLİ!!!!!</span>
+        <summary>Epcot Center</summary> <!-- Etiketi için görünür bir başlık tanımlar <ayrıntıları> elemanı. Ayrıntıları görüntülemek/gizlemek için başlığa tıklanabilir. -->
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p> <!-- Etiket "tanımı elemanı" anlamına gelir ve bu içerik içinde tanımlanan olacak bir terim belirtir. -->
+    <p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+    <p><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> is the standard markup language for creating web pages.</p>
+
+    <p><dfn id="html-def">HTML</dfn> is the standard markup language for creating web pages.</p>
+    <p>This is some text...</p>
+    <p>This is some text...</p>
+    <p>Learn <a href="#html-def">HTML</a> now.</p>
+
+
+    <dialog open>This is an open dialog window</dialog> <!-- Etiketi, bir iletişim kutusu veya alt pencere tanımlar. -->
+
+    <p>You <em>have</em> to hurry up!</p> <!-- Etiket vurguladı metni tanımlamak için kullanılır. İçindeki içerik genellikle italik olarak görüntülenir . -->
+
+    <figure> <!-- Vb resim, şekil, fotoğraf, kod girişler gibi etiketin belirtir müstakil içerik, -->
+        <img src="images.png" alt="Trulli" style="width:100%">
+        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption> <!-- Etiketi için bir başlık tanımlar <rakam> elemanı. -->
+    </figure>
+
+    <footer> <!-- Etiketi, bir belgenin veya bölümün altbilgi tanımlar -->
+        <p>Author: Hege Refsnes</p>
+        <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+
+    <article>
+        <header> <!-- Eleman giriş içerik veya seyir bağlantılar kümesi için bir kabı ifade etmektedir. -->
+          <h1>A heading here</h1>
+          <p>Posted by John Doe</p>
+          <p>Some additional information here</p>
+        </header>
+        <p>Lorem Ipsum dolor set amet....</p>
+    </article>
+
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p> <!-- Etiket klavye girişi tanımlamak için kullanılır. İçindeki içerik, tarayıcının varsayılan monospace yazı tipinde görüntülenir. -->
+
+    <main> <!-- Etiketi, bir belgenin ana içeriğini belirler. Öğenin içindeki içerik , belgeye özgü olmalıdır. Kenar çubukları, gezinme bağlantıları, telif hakkı bilgileri, site logoları ve arama formları gibi belgeler arasında tekrarlanan herhangi bir içerik içermemelidir. -->
+        <h1>Most Popular Browsers</h1>
+        <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+      
+        <article>
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+      
+        <article>
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+      
+        <article>
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+    </main>
+
+    <p>Do not forget to buy <mark>milk</mark> today.</p> <!-- İşaretli veya vurgulanmalıdır etiketi tanımlar metni. -->
+
+    <label for="disk_c">Disk usage C:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br> <!-- Etiket, bilinen bir dizi, veya kesirli değer içinde bir skaler ölçüm tanımlar. Bu aynı zamanda bir ölçü olarak da bilinir. -->
+
+    <nav> <!-- Etiket gezinme bağlantılarının bir kümesini tanımlar. Bir belgenin tüm bağlantılarının bir <nav>öğenin içinde OLMAMASI gerektiğine dikkat edin . <nav>Eleman sadece gezinme bağlantılarının büyük blok için tasarlanmıştır. -->
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a>
+    </nav>
+
+    <script>
+        document.write("Hello World!")
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript> <!-- Etiketi tarayıcılarında engelli komut dosyaları var veya destek komut yapar bir tarayıcı olan kullanıcılara görüntülenecek alternatif içeriği tanımlar. -->
+     
+    <audio src="">
+        <param name="autoplay" value="true"> <!-- "Autoplay" parametresini "true" olarak ayarlayın, böylece sayfa yüklenir yüklenmez ses çalmaya başlayacaktır -->
+    </audio>
+
+    <pre> <!-- Bir öğedeki metin sabit genişlikli bir yazı tipinde görüntülenir ve metin hem boşlukları hem de satır sonlarını korur. Metin tam olarak HTML kaynak kodunda yazıldığı gibi görüntülenecektir. -->
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks
+    </pre>
+
+    <label for="file">Downloading progress:</label> <!-- for özniteliği, <label> onları birbirine bağlamak için ilgili öğenin id özniteliğine eşit olmalıdır. Bir etiket, öğeyi öğenin içine yerleştirerek de öğeye bağlanabilir <label>. -->
+    <progress id="file" value="32" max="100"> 32% </progress> <!-- Etiketi, bir görevin tamamlanması ilerlemeyi temsil etmektedir. -->
+
+    <ruby> <!-- Etiketi, bir yakut ek açıklama belirtir. Ruby notu, karşılık gelen karakterlerin telaffuzunu veya anlamını belirtmek için ana metne eklenen küçük bir ekstra metindir. Bu tür açıklama genellikle Japon yayınlarında kullanılır. -->
+        漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp> <!-- 
+            rp: Etiket açıklamaları yakut desteklemeyen tarayıcılar tarafından gösterilmeye, bir yakut metin etrafında parantez sağlamak için kullanılabilir.
+            Etiketi, bir yakut ek açıklamada bir açıklama ya da (Doğu Asya tipografi için) karakterlerin telaffuzunu tanımlar.
+        -->
+    </ruby>
+
+    <p><s>Only 50 tickets left!</s></p> <!-- Artık doğru, tutarlı veya ilgili olduğu etiketin belirtir metni. Metin, üzerinde bir çizgi ile görüntülenecektir. -->
+    <p>SOLD OUT!</p>
+
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p> <!-- Etiket, bir bilgisayar programı, örnek çıktı tanımlamak için kullanılır. İçindeki içerik, tarayıcının varsayılan monospace yazı tipinde görüntülenir. -->
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <!-- 
+        <script>: Etiket gömmek bir istemci tarafı komut dosyası (JavaScript) için kullanılır.
+        <script>: Eleman ya betik ifadeleri içeriyor veya src niteliği yoluyla harici komut dosyasına işaret ediyor. JavaScript'in yaygın kullanımları, görüntü işleme, form doğrulama ve dinamik içerik değişiklikleridir.
+        İpucu: Tarayıcılarında komut dosyalarını devre dışı bırakmış veya istemci tarafında komut dosyası oluşturmayı desteklemeyen bir tarayıcıya sahip kullanıcılar için <noscript> öğesine de bakın .
+        HTML ve XHTML Arasındaki Farklar
+            XHTML'de, komut dosyalarının içindeki içerik (CDATA yerine) #PCDATA olarak bildirilir, bu da varlıkların ayrıştırılacağı anlamına gelir.
+            Bu, XHTML'de tüm özel karakterlerin kodlanması veya tüm içeriğin bir CDATA bölümüne sarılması gerektiği anlamına gelir:
+    -->
+
+    <section> <!-- Etiket bir belgede bir bölümü tanımlar. -->
+        <h2>WWF History</h2>
+        <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+    </section>
+    <section>
+        <h2>WWF's Symbol</h2>
+        <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+    </section>    
+    
+    <strong>This text is important!</strong> <!-- Etiketi güçlü öneme sahip metni tanımlamak için kullanılır. İçindeki içerik genellikle kalın olarak görüntülenir. -->
+
+    <p>This text contains <sub>subscript</sub> text.</p> <!-- Etiket simge metni tanımlar. Alt simge metni, normal satırın yarım karakter altında görünür ve bazen daha küçük bir yazı tipiyle işlenir. Alt simge metni, H 2 O gibi kimyasal formüller için kullanılabilir. -->
+    <p>This text contains <sup>superscript</sup> text.</p> <!-- Etiketi üstindis metni tanımlar. Üst simge metni, normal satırın yarım karakter üzerinde görünür ve bazen daha küçük bir yazı tipiyle işlenir. Üst simge metni, WWW [1] gibi dipnotlar için kullanılabilir. -->
+
+    <svg width="100" height="100"> <!-- Etiket SVG grafikler için bir kabı tanımlar.
+        SVG'nin yollar, kutular, daireler, metin ve grafik görüntüleri çizmek için çeşitli yöntemleri vardır. 
+        SVG hakkında daha fazla bilgi edinmek için lütfen SVG Eğitimimizi okuyun.
+        -->
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <table>
+        <thead> <!-- Etiket grubuna bir HTML tablosunda vücut içeriği kullanılır. -->
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody> <!-- 
+            Etiket grubuna bir HTML tablosunda vücut içeriği kullanılır.
+            Eleman ile bağlantılı olarak kullanıldığında, <thead> ve <tfoot> bir tablo (gövde, başlık, başlık) her kısmını belirlemek için elemanları.
+            Tarayıcılar, tablo gövdesinin üstbilgi ve altbilgiden bağımsız olarak kaydırılmasını sağlamak için bu öğeleri kullanabilir. Ayrıca, birden çok sayfaya yayılan büyük bir tablo yazdırırken, bu öğeler tablo üstbilgisinin ve altbilgisinin her sayfanın üstüne ve altına yazdırılmasını sağlayabilir.
+            -->
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot> <!-- Etiket HTML tablosunda grup altbilgideki içeriğe kullanılır. -->
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+    </table>
+
+    <button onclick="showContent()">Show hidden content</button>
+    <template> <!-- Etiketi kullanıcı sayfa yüklendiğinde gizli bazı HTML içeriğini tutmak için bir kap olarak kullanılır. İçindeki içerik <template> daha sonra bir JavaScript ile oluşturulabilir. -->
+        <h2>Flower</h2>
+        <img src="img_white_flower.jpg" width="214" height="204">
+    </template>
+    <script>
+        function showContent() {
+        var temp = document.getElementsByTagName("template")[0];
+        var clon = temp.content.cloneNode(true);
+        document.body.appendChild(clon);
+        }
+    </script>
+
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p> <!-- Etiket, bir belirli bir zaman (ya da başlangıç tarihi) tanımlar. -->
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    <video width="320" height="240" controls>
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"> <!-- İçin etiketinin belirtir metin parçaları <audio> veya <video> elemanlar. Bu öğe, medya oynatılırken görünmesi gereken altyazıları, altyazı dosyalarını veya metin içeren diğer dosyaları belirtmek için kullanılır. Parçalar WebVTT biçiminde (.vtt dosyaları) biçimlendirilir. -->
+        <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+    </video>
+
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p> <!-- Etiket programlamada veya matematiksel bir ifadede tanımlayıp bir değişken kullanılır. İçindeki içerik genellikle italik olarak görüntülenir. -->
+
+    <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p> <!-- Bir metinde Tamam olacağını (Word Molası Fırsat) etiketi belirtir satır sonu eklemek için. İpucu: Bir sözcük çok uzun olduğunda, tarayıcı onu yanlış yerden kesebilir. <wbr> Sözcük sonu fırsatları eklemek için öğeyi kullanabilirsiniz . -->
+    
+</body>
+</html>

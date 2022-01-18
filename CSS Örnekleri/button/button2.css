@@ -1,0 +1,70 @@
+.dügme{
+    margin: 100px;
+    width: 200px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: wheat;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+#top{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    display: block;
+    z-index: -1;
+    left: 4px;
+    top: 4px;
+    border-radius: 100%;
+    transition: all .5s ease-in;
+}
+#top2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    display: block;
+    z-index: -1;
+    left: -180px;
+    top: 4px;
+    border-radius: 100%;
+    transition: all .5s ease-in;
+}
+.dügme:hover #top{
+    left: 190px;
+}
+.dügme:hover #top2{
+    left: 4px;
+}
+.sarıportal{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    left: -190px;
+    top: -75px;
+    animation: anim 6s linear infinite;
+    z-index: 1;
+}
+.maviportal{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    left: 190px;
+    top: -75px;
+    animation: anim 6s linear infinite;
+    z-index: 1;
+}
+@keyframes anim{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

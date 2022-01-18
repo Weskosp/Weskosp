@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+            background-color: rgb(185, 82, 82);
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        th{
+            height: 100px;
+            font-size: 70px;
+            background-color: rgb(182, 92, 92);
+            border: 5px solid rgb(182, 92, 92);
+        }
+        td{
+            font-size: 30px;
+            height: 181px;
+        }
+        .menu{
+            width: 350px;
+            background-color: rgb(184, 118, 118);
+            border: 5px solid rgb(184, 118, 118);
+        }
+        .menu a{
+            display: block;
+            padding: 68px;
+            text-decoration: none;
+            color: black;
+        }
+        .menu:hover{
+            transition: all .1s ease-in;
+            background-color: rgb(151, 99, 99);
+            border-color: rgb(151, 99, 99);
+        }
+        #ders{
+            width: 100%;
+            height: 740px;
+            border-style: none;
+        }
+        #galeri{
+            border-style: none;
+            border-color: rgb(184, 118, 118);
+            width: 100%;
+            height: 740px;
+        }
+        #içerik{
+            vertical-align: top;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="3">11-C SINIFI</th>
+        </tr>
+        <tr>
+            <td class="menu"><a href="index.html">Anasayfa</a></td>
+            <td id="içerik" rowspan="4" style="border-bottom: 5px solid rgb(184, 118, 118);background-color: rgb(185, 131, 131);">
+                <iframe id="galeri" src="galerifoto.html"></iframe>
+            </td>
+            <td rowspan="2" style="width: 380px;border: 5px solid rgb(184, 118, 118);background-color: rgb(184, 118, 118);"><iframe id="haber" src="https://www.ensonhaber.com/sondakika/index7.php" width="425" height="319" scrolling="no"></iframe></td>
+        </tr>
+        <tr>
+            <td class="menu"><a href="hakkımızda.html">Hakkımızda</a></td>
+        </tr>
+        <tr>
+            <td class="menu"><a href="galeri.html">Galeri</a></td>
+            <td rowspan="2" style="border: 5px solid rgb(184, 118, 118);background-color: rgb(184, 118, 118);"><a href="https://alikulmtal.meb.k12.tr/tema/iletisim.php"><img src="https://img.webme.com/pic/p/piriketseverler/dikey_reklam.gif" width="370" height="340"></a></td>
+        </tr>
+        <tr>
+            <td id="ilet" class="menu"><a href="iletişim.html">İletişim</a></td>
+        </tr>
+    </table>
+</body>
+</html>

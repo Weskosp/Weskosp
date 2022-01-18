@@ -1,0 +1,51 @@
+.buton{
+    margin: 100px;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(102, 175, 102);
+    color: rgb(102, 175, 102);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px rgb(102, 175, 102), -1px -1px 5px rgb(102, 175, 102);
+    text-shadow: 1px 1px 5px rgb(102, 175, 102), -1px -1px 5px rgb(102, 175, 102);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all .5s ease-in;
+}
+.buton::before, .buton::after{
+    content: "";
+    width: 100px;
+    display: block;
+    height: 100px;
+    background-color: rgb(102, 175, 102);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    z-index: -1;
+    transition: all .5s ease-in;
+}
+.buton::before{
+    left: -3em;
+    top: -5em;
+}
+.buton::after{
+    left: 18em;
+    top: 8em;
+}
+.buton:hover::after{
+    width: 400px;
+    height: 400px;
+    background-color: royalblue;
+}
+.buton:hover::before{
+    width: 400px;
+    height: 400px;
+    background-color: royalblue;
+}
+.buton:hover{
+    color: rosybrown;
+    text-shadow: 1px 1px 5px rosybrown, -1px -1px 5px rosybrown;
+    box-shadow: 1px 1px 5px royalblue, -1px -1px 5px royalblue;
+}

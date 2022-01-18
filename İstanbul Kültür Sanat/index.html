@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        #menu{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 80px;
+            background-color: rgb(48, 48, 48);
+            z-index: 2;
+        }
+        #menux{
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            height: 80px;
+            font-size: 30px;
+            border-bottom: 5px solid whitesmoke;
+        }
+        #menum1{
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        #menum1 li{
+            float: left;
+        }
+        #menum2{
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        #menum2 li{
+            float: right;
+        }
+        .menum{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menum li a{
+            text-decoration: none;
+            display: inline-block;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: rgb(48, 48, 48);
+            font-size: 28px;
+            font-family: Verdana;
+            color: white;
+            padding: 23px;
+            width: 300px;
+            height: 81px;
+            transition: all .3s;
+        }
+        .open-menu{
+            display: none;
+            width: 300px;
+            height: 80px;
+            list-style-type: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .open-menu li{
+            display: block;
+        }
+        .menum li a:hover{
+            background-color: rgb(41, 41, 41);
+        }
+        .menum li:hover ul{
+            display: block;
+        }
+        #muzik{
+            width: 100%;
+            height: 700px;
+            background-image: url(müzik.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        #muzik div{
+            width: 1287px;
+            height: 650px;
+            background-color: black;
+            box-sizing: border-box;
+            margin-left: -228px;
+            opacity: 0.8;
+            clip-path: circle(55%);
+            z-index: -2;
+            color: white;
+            padding: 50px;
+            padding-left: 237px;
+            padding-right: 90px;
+        }
+        #muzik-text{
+            font-size: 23px;
+            font-family: Verdana;
+            hyphens: auto;
+            background-color: black;
+            animation: anim 2s linear;
+        }
+        #sanat{
+            width: 100%;
+            height: 700px;
+            background-image: url(sanat.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        #sanat div{
+            width: 1246px;
+            height: 650px;
+            background-color: black;
+            box-sizing: border-box;
+            margin-left: -228px;
+            opacity: 0.8;
+            clip-path: circle(55%);
+            z-index: -2;
+            color: white;
+            padding: 50px;
+            padding-left: 237px;
+            padding-right: 90px;
+        }
+        #sanat-text{
+            font-size: 23px;
+            font-family: Verdana;
+            hyphens: auto;
+            background-color: black;
+            animation: anim 2.5s linear;
+        }
+        #tiyatro{
+            width: 100%;
+            height: 700px;
+            background-image: url(tiyatro.jpg);
+            background-size: cover;
+            background-position-y: center;
+        }
+        #tiyatro div{
+            width: 1200px;
+            height: 650px;
+            background-color: black;
+            box-sizing: border-box;
+            margin-left: -228px;
+            opacity: 0.8;
+            clip-path: circle(55%);
+            z-index: -2;
+            color: white;
+            padding: 50px;
+            padding-left: 237px;
+            padding-right: 90px;
+        }
+        #tiyatro-text{
+            font-size: 23px;
+            font-family: Verdana;
+            hyphens: auto;
+            background-color: black;
+            animation: anim 3s linear;
+        }
+        @keyframes anim{
+            0% {color: transparent; margin-left: -200px;}
+        }
+        #end-div{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+        }
+        #end-text{
+            color: white;
+            text-align: center;
+            font-family: Verdana;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-body">
+        <div id="menu">
+            <div id="menux">
+                <ul class="menum" id="menum1">
+                    <li><a href="index.htmlhttps://www.reddit.com/user/yasintanv2">Ev</a></li>
+                    <li>
+                        <a href="">Etkinlikler</a>
+                        <ul class="open-menu menum">
+                            <li><a href="#muzik">Müzik</a></li>
+                            <li><a href="#sanat">Sanat</a></li>
+                            <li style="border-bottom: 5px solid whitesmoke;"><a href="#tiyatro">Tiyatro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul style="list-style-type: none;margin: 0;padding: 0;">
+                    <li style="margin: auto;margin-top: -10px;font-family: 'Curlz MT';font-size: 70px;color: white;">Istanbul Kültür Sanat</li>
+                </ul>
+                <ul class="menum" id="menum2">
+                    <li><a href="">Hakkımızda</a></li>
+                    <li>
+                        <a href="">İletişim</a>
+                        <ul class="open-menu menum">
+                            <li><a href="https://instagram.com/yasintan_2132?utm_medium=copy_link">İnstagram</a></li>
+                            <li><a href="">Twitter</a></li>
+                            <li style="border-bottom: 5px solid whitesmoke;"><a href="https://www.reddit.com/user/yasintanv2">Reddit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="muzik">
+            <div>
+                <div id="muzik-text">
+                    <h1><a name="muzik">MÜZİK</a></h1>
+                    <p>Çevrimiçi video platformu borusansanat.tv üzerinden yayınladığı ücretsiz konser kayıtlarıyla izleyicilerine ulaşmaya devam eden Borusan Sanat, ağırladığı birbirinden değerli solist ve şefler ile bu hafta da keyifli bir program hazırladı. 8 <br> Mayıs Cumartesi günü saat 19.30’da borusansanat.tv’de, dünyanın farklı coğrafyalarından sanatçıların İstanbul’da buluştuğu, geleneksel müzikal unsurları yeni bir bakış açısıyla yorumlayan Evrim Demirel Trio, Borusan Müzik Evi’nde seyircisi ile buluşuyor.</p>
+                    <p>Caz ve klasik müziğin en yetenekli isimlerinden biri olan besteci ve caz piyanisti Evrim Demirel, Alman kontrabasçı Andreas Metzler ve İtalyan davulcu Riccardo Marenghi’nin yer aldığı üçlü; “Stanpolites” başlıklı konserinde, bir araya <br> geldikleri şehir olan İstanbul’un multi-kültürel yapısının yansımalarını, Osmanlı motifleri ve kolektif kompozisyonlar ile çağdaş bir bakış açısıyla yorumluyor.</p>
+                </div>
+            </div>
+        </div>
+        <div id="sanat">
+            <div>
+                <div id="sanat-text">
+                    <h1><a name="sanat">SANAT</a></h1>
+                    <p>İstanbul Modern, 16'ncı yaşını geride bıraktı. İstanbul Modern Yönetim Kurulu Başkanı Oya Eczacıbaşı, müzenin 8 milyon 200 bin ziyaretçiye ulaştığını kaydetti. Eczacıbaşı, "68 koleksiyon ve süreli sergi, 40 fotoğraf sergisi, 13 video sergisi, 17 yurt dışı sergisi gerçekleştirdik. Binin üzerinde sanatçı sergilerimizde yer aldı. 825 bin çocuk ve gencimiz sunduğumuz eğitim programlarına katılarak sanatla buluştu. İstanbul Modern Sinema'da 336 film programı ile 4 binin üzerinde film gösterimi gerçekleştirdik" bilgisini verdi.</p>
+                    <p>17 Mart - 10 Aralık 2020 tarihlerini kapsayan pandemi süresince müzenin dijital platformlarında da sergi ve etkinliklerini sürdüren İstanbul Modern, 800 <br> bin kişiyi sanatla buluşturdu.</p>
+                </div>
+            </div>
+        </div>
+        <div id="tiyatro">
+            <div>
+                <div id="tiyatro-text">
+                    <h1><a name="tiyatro">TİYATRO</a></h1>
+                    <p>İstanbul Kültür Sanat Vakfı (İKSV) tarafından Koç Holding Enerji Grubu Şirketleri Aygaz, Opet ve Tüpraş sponsorluğunda düzenlenecek 25. İstanbul Tiyatro Festivali, 22 Ekim’de perdelerini açıyor. “Bu Zamanda Tiyatro” sloganıyla festivalin 25'inci edisyonu, yeni bir normal arayışındaki dünyaya tiyatronun gözünden bakan pek çoğu yeni yapımla hem tiyatro dünyasına hem de tiyatroseverlere nefes aldırmak üzere yola çıktı.</p>
+                    <p>Festivale bir ay boyuncakonuk olacak 25 yerli ve uluslararası yapımın bir bölümü çevrimiçi gösterimlerle tüm Türkiye'den izlenebilirken bir bölümüyse Alan Kadıköy, Atlas 1948 Sineması, Profilo Kültür Merkezi Batı Ana Sahne, Duru Ataşehir, Moda Sahnesi, Caddebostan Kültür Merkezi, Müze Gazhane, Yapı Kredi bomontiada ve Zorlu PSM'de fiziksel olarak Covid-19 önlemleri altında izleyicileriyle buluşacak. Çevrimiçi <br> gösterimler festival boyunca passostudio.com adresinden <br> izlenebilecek.</p>
+                </div>
+            </div>
+        </div>
+        <div id="end-div">
+            <div id="end-text">
+                <h1>İstanbul Kültür Sanat</h1>
+                <p style="font-size: 20px;">@2021 İstanbul Kültür Sanat. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

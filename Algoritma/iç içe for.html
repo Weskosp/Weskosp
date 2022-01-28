@@ -9,9 +9,11 @@
 <body>
     <p id="demo"></p>
     <script>
-        var metin = 'Yasin Tan';
-        var uzunluk = metin.length;
-        document.getElementById('demo').innerHTML = 'bu sayının uzunluğu: ' + uzunluk; 
+        for(var i = 0; i < 5; i++){
+            for(var j = 0; j < 5; j++){
+                document.getElementById('demo').innerHTML += j + "<br>";
+            }
+        }
     </script>
 </body>
 </html>

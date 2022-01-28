@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
+    <p id="sehir">Tokat</p>
+    <p id="sehir2">İstanbul</p>
+    <p class="sehirs">Bulunduğun şehir: </p>
     <script>
-        var metin = 'Yasin Tan';
-        var uzunluk = metin.length;
-        document.getElementById('demo').innerHTML = 'bu sayının uzunluğu: ' + uzunluk; 
+        var konum = document.getElementById('sehir').innerHTML;
+        document.getElementsByClassName("sehirs")[0].innerHTML += "<b>" + konum + "<b>";
     </script>
 </body>
 </html>

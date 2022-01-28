@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var sayi = 100; //int(integer) = sayı
+        var metin = 'superidol';// string = metin
+        var ikili = false// bool
+        var dizi = ['super', 'ideol', 'is about drive', 1881, false]; //diziler
+        console.log(dizi[1]); //hangi dizi elemanını çağırsın
+        console.log('super idol\' dasadasasdasdsad'); //tırnak için tırnak
+        console.log('super \n dasadasasdasdsad'); // alt satıra geçer
+    </script>
+
+    <!-- Diziler -->
+    <script>
+        var dizi1 = [];
+        dizi1['super']  = '1.Eleman';
+        dizi1['idol']    = '2.Eleman';
+        dizi1[1923]      = 1938;
+        dizi1[true]      = 31;
+        console.log(dizi1['super']);
+        
+        var dizi2 = [];
+        dizi2['superd']  = '1.Eleman';
+        dizi2['idold']    = '2.Eleman';
+        dizi2[1923]      = 1938;
+        dizi2[true]      = 31;
+
+        var toplam = dizi1[1923] + dizi2[true];
+        console.log(toplam);
+
+
+        var dizi3 = new Array(
+            ['merhaba', 'ben', 'volkan'],
+            ['ben', 'volkan'],
+            ['sen', 'volkan', ['super idol', 'merhaba ben volkan konak']]
+        );
+        console.log(dizi3[2][2][1]);
+
+        var dizi4 = [
+            ['merhaba', 'ben', 'volkan'],
+            ['ben', 'volkan'],
+            ['sen', 'volkan', ['super idol', 'merhaba ben volkan konak']]
+        ];
+        console.log(dizi4[0][2]);
+
+    </script>
+
+    <script>
+        var obj = { //nesne tabanlılar için object
+            'super': 'idol',
+            'is about': 'drive',
+            1452 : 'pussy',
+            true : false
+        };
+        console.log(obj.super);
+
+        var obj1 = {
+            'super': 'idol',
+            'is about': 'drive',
+            1452 : 'pussy',
+            true : {'ananin': 3131} //obje için de obje
+        };
+        console.log(obj1.true.ananin);
+
+    </script>
+</body>
+</html>

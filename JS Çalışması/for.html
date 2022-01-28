@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(var i = 0; i < 31 ; i++){
+            console.log(i);
+        }
+        console.log('---------------------------------------------------------------------')
+
+    </script>
+    <script>
+        for(var i = 0; i <= 31 ; i+=4){
+            console.log(i);
+        }
+        console.log('---------------------------------------------------------------------')
+    </script>
+    <script>
+        var j = 0;
+        var azalis = 3;
+        for(var i = 0; i <= 31 ; i+=azalis){
+            console.log('i : ' + i);
+            j += azalis;
+            console.log('j : ' + j);
+            console.log('|||||')
+        }
+        console.log('---------------------------------------------------------------------')
+    </script>    
+    <script>
+        var j = 0;
+        var azalis = 3;
+        for(var i = 0; i <= 31 ; i+=azalis){
+            console.log('i : ' + i);
+            j = j + azalis; // aynı sonucu verir j değişkendir 
+            console.log('j : ' + j);
+            console.log('|||||')
+        }
+        console.log('---------------------------------------------------------------------')
+        </script>
+    <script>
+        var j = 0;
+        var azalis = 1;
+        for(var i = 0; i <= 31 ; i+=azalis){
+            if(i == 6){
+                break; // Döngü iptal olur
+            }
+            else{
+            console.log('i : ' + i);
+            j = j + azalis; // aynı sonucu verir j değişkendir 
+            console.log('j : ' + j);
+            console.log('|||||')
+            }
+        }
+        console.log('---------------------------------------------------------------------')
+    </script>
+        
+        
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+            height: 700px;
+            border: 1px solid;
+        }
+        p{
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="demo"></p>
+    </div>
+    <script>
+        
+        var dem = document.getElementById("demo");
+        document.addEventListener("mousemove", degistir);
+        function degistir(){
+            
+            var renk = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var uzunluk = renk.length;
+            var i = 0;
+            var sonuc = "";
+            
+            for(i = 0; i < 1; i++){
+                sonuc += renk.charAt(Math.floor(Math.random() * uzunluk)); //Rastgele şifre oluşturmak için charAt() içine Math.floor ve onun içine Math.random koyarak Math.random ile txt değişkenin uzunluğu ile birleşicek ve rastgele şifreler oluşucak
+            }
+            return sonuc;
+        }
+        dem.innerHTML = degistir();
+    </script>
+</body>
+</html>

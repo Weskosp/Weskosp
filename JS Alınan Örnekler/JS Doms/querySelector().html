@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- İlk <p> öğesini alın: -->
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <script>
+        document.querySelector('p').style.backgroundColor = 'red';
+    </script>
+    <hr>
+    <!-- class="example" ile ilk öğeyi alın: -->
+    <p class="example">Bu bir paragraf...</p>
+    <p class="example">Bu bir paragraf...</p>
+    <p class="example">Bu bir paragraf...</p>
+    <p class="example">Bu bir paragraf...</p>
+    <p class="example">Bu bir paragraf...</p>
+    <script>
+        document.querySelector('.example').innerHTML = 'super idol';
+    </script>
+ <hr>
+    <!-- querySelector() yöntemi, bir CSS seçiciyle eşleşen ilk öğeyi döndürür. -->
+
+    <!-- class="example" ile ilk <p> öğesini alın: -->
+    <h1 class="example1">OLUR gibi</h1>
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <p class="example1">Bu bir paragraf...</p>
+    <p class="example1">Bu bir paragraf...</p>
+    <script>
+        document.querySelector('p.example1').style.backgroundColor = 'green';
+    </script>
+
+    <hr>
+
+    <!-- Öğenin metnini id="demo" ile değiştirin: -->
+    <p>Bu bir paragraf...</p>
+    <p>Bu bir paragraf...</p>
+    <p id="example1">Bu bir paragraf...</p>
+    <p id="example1">Bu bir paragraf...</p>
+    <script>
+        document.querySelector('#example1').style.backgroundColor = 'green';
+    </script>
+
+    <hr>
+
+    <!-- Üst öğenin bir <div> öğesi olduğu ilk <p> öğesini seçin. -->
+    <div>
+        <p>Bu bir paragraf...</p>
+        <p>Bu bir paragraf...</p>    
+    </div>
+    <script>
+        document.querySelector('div > p').style.backgroundColor = 'green';
+    </script>
+
+    <hr>
+
+    <!-- "Hedef" özniteliğine sahip ilk <a> öğesini seçin: -->
+    <a href="">BASMA!</a>
+    <a href="" target="_blank">BASMA2!</a>
+    <a href="" target="_top">BASMA3!</a>
+    <script>
+        document.querySelector('a[target]').style.border = '10px solid red';
+    </script>
+
+    <hr>
+
+    <!-- İlk <h3> veya ilk <h4> öğesini seçin: -->
+    <h2>Super</h2>
+    <h3>İdol</h3>
+    <script>
+        document.querySelector('h2, h3').style.backgroundColor = 'blue';
+    </script>
+
+    <!-- İlk <h3> veya ilk <h4> öğesini seçin: -->
+    <h4>Super</h4>
+    <h5>İdol</h5>
+    <script>
+        document.querySelector('h5, h4').style.backgroundColor = 'blue';
+    </script>        
+</body>
+</html>

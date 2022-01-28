@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cont{
+            width: 216px;
+            height: 280px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 8px;
+            margin: 50px;
+            background-color: rgb(194, 190, 190);
+        }
+        #screen{
+            box-sizing: border-box;
+            width: 206px;
+            height: 50px;
+            margin: 4px;
+            padding-left: 5px;
+            border: 1px solid black;
+            background-color: honeydew;
+        }
+        #screen p{
+            font-size: 18px;
+        }
+        .tuslar{
+            box-sizing: border-box;
+            float: left;
+            margin: 2px;
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+            border: 0px solid black;
+            text-align: center;
+            padding: 1rem;
+            background-color: gray;
+            cursor: pointer;
+            user-select: none;
+            font-size: 18px;
+        }
+        .tuslar:active{
+            background-color: rgb(94, 89, 89);
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div type="text" id="screen"><p id="demo"></p></div>
+        <button class="tuslar" id="but1">1</button>
+        <button class="tuslar" id="but2">2</button>
+        <button class="tuslar" id="but3">3</button>
+        <button class="tuslar" id="but4">+</button>
+        <button class="tuslar" id="but5">4</button>
+        <button class="tuslar" id="but6">5</button>
+        <button class="tuslar" id="but7">6</button>
+        <button class="tuslar" id="but8">*</button>
+        <button class="tuslar" id="but9">7</button>
+        <button class="tuslar" id="but10">8</button>
+        <button class="tuslar" id="but11">9</button>
+        <button class="tuslar" id="but12">/</button>
+        <button class="tuslar" id="but13">Sil</button>
+        <button class="tuslar" id="but14">0</button>
+        <button class="tuslar" id="but15">=</button>
+        <button class="tuslar" id="but16">-</button>
+    </div>
+    <script>
+        var sonuc = document.getElementById("demo");
+
+        document.getElementById('but1').addEventListener("click", function(){
+            var i = 0;
+            i++;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but2').addEventListener("click", function(){
+            var i = 0;
+            i+=2;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but3').addEventListener("click", function(){
+            var i = 0;
+            i+=3;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but4').addEventListener("click", function(){
+            sonuc.innerHTML += "+";
+        });
+
+
+
+        document.getElementById('but5').addEventListener("click", function(){
+            var i = 0;
+            i+=4;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but6').addEventListener("click", function(){
+            var i = 0;
+            i+=5;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but7').addEventListener("click", function(){
+            var i = 0;
+            i+=6;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but8').addEventListener("click", function(){
+            sonuc.innerHTML += "*";
+        });
+
+
+
+
+        document.getElementById('but9').addEventListener("click", function(){
+            var i = 0;
+            i+=7;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but10').addEventListener("click", function(){
+            var i = 0;
+            i+=8;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but11').addEventListener("click", function(){
+            var i = 0;
+            i+=9;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but12').addEventListener("click", function(){
+            sonuc.innerHTML += "/";
+        });
+
+
+
+
+        document.getElementById('but13').addEventListener("click", function(){
+            sonuc.innerHTML = "";
+        });
+        document.getElementById('but14').addEventListener("click", function(){
+            var i = 0;
+            sonuc.innerHTML += i;
+        });
+        document.getElementById('but15').addEventListener("click", function(){
+            if(sonuc.innerHTML.charCodeAt(1) == 43 || sonuc.innerHTML.charCodeAt(2) == 43 || sonuc.innerHTML.charCodeAt(3) == 43 || sonuc.innerHTML.charCodeAt(4) == 43 || sonuc.innerHTML.charCodeAt(5) == 43){
+                if(sonuc.innerHTML.length == 3 && sonuc.innerHTML.charCodeAt(1) == 43){
+                    var x = sonuc.innerHTML.charAt(2);
+                    var y = sonuc.innerHTML.charAt(0);
+                    var a = parseInt(x);
+                    var b = parseInt(y);
+
+                    deger = a + b;
+                    sonuc.innerHTML = deger;
+                }
+                else if(sonuc.innerHTML.length > 3 && sonuc.innerHTML.charCodeAt(0) == 43 || sonuc.innerHTML.charCodeAt(1) == 43 || sonuc.innerHTML.charCodeAt(2) == 43 || sonuc.innerHTML.charCodeAt(3) == 43 || sonuc.innerHTML.charCodeAt(4) == 43){
+                    var x = sonuc.innerHTML.charAt(3) + sonuc.innerHTML.charAt(4) + sonuc.innerHTML.charAt(5) + sonuc.innerHTML.charAt(6);
+                    var y = sonuc.innerHTML.charAt(0) + sonuc.innerHTML.charAt(1) + sonuc.innerHTML.charAt(2) + sonuc.innerHTML.charAt(3);
+                    var a = parseInt(x);
+                    var b = parseInt(y);
+
+                    deger = a + b;
+                    sonuc.innerHTML = deger;
+                }
+            }
+
+            else if(sonuc.innerHTML.charCodeAt(1) == 42 || sonuc.innerHTML.charCodeAt(2) == 42 || sonuc.innerHTML.charCodeAt(3) == 42 || sonuc.innerHTML.charCodeAt(4) == 42 || sonuc.innerHTML.charCodeAt(5) == 42){
+                if(sonuc.innerHTML.length == 3 && sonuc.innerHTML.charCodeAt(1) == 42){
+                    var x = sonuc.innerHTML.charAt(2);
+                    var y = sonuc.innerHTML.charAt(0);
+                    var a = parseInt(x);
+                    var b = parseInt(y);
+
+                    deger = a * b;
+                    sonuc.innerHTML = deger;
+                }
+                else if(sonuc.innerHTML.length > 3 && sonuc.innerHTML.charCodeAt(0) == 42 || sonuc.innerHTML.charCodeAt(1) == 42 || sonuc.innerHTML.charCodeAt(2) == 42 || sonuc.innerHTML.charCodeAt(3) == 42 || sonuc.innerHTML.charCodeAt(4) == 42){
+                    var x = sonuc.innerHTML.charAt(3) + sonuc.innerHTML.charAt(4) + sonuc.innerHTML.charAt(5) + sonuc.innerHTML.charAt(6);
+                    var y = sonuc.innerHTML.charAt(0) + sonuc.innerHTML.charAt(1) + sonuc.innerHTML.charAt(2) + sonuc.innerHTML.charAt(3);
+                    var a = parseInt(x);
+                    var b = parseInt(y);
+
+                    deger = a * b;
+                    sonuc.innerHTML = deger;
+                }
+            }
+        });
+        document.getElementById('but16').addEventListener("click", function(){
+            sonuc.innerHTML += "-";
+        });
+    </script>
+</body>
+</html>

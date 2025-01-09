@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Resimler/icon.ico" type="image/x-icon" >
+    <title>MGame</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div id="container">
+        <div id="hov" style="width: 100%;height: 50px;position: fixed;z-index: 1;"></div>
+        <div id="menu">
+            <div id="logo"><a href="index.html">MGame</a></div>
+            <div id="menus">
+                <ul>
+                    <li><a href="">Oyunlar</a></li>
+                    <li><a href="">Oyun Yap</a></li>
+                    <li><a href="yapimci.html">Yapımcılar</a></li>
+                </ul>    
+            </div>
+        </div>
+        <div id="space">
+            <div id="bg"></div>
+            Hoşgeldiniz
+            <p style="font-size: 30px;">MGame 1000'den fazla oyunu barındırıp sizin en iyi zamanı geçirmenizi ister. İYİ EĞLENCELER!</p>
+            <a href="#pacs">Hemen Oyna</a>
+            <p style="font-size: 20px;position: absolute;bottom: 0;left: 37%;">Bazı klasik oyunlarımıza bakmak için aşağı kaydırınız.</p>
+            <img id="a" src="Resimler/color-scheme-right.svg" width="450" style="right: -600px;transform-origin: 50% 80%;">
+            <img id="b" src="Resimler/color-gradient-spacecraft.svg" width="500" style="left: -600px;">
+        </div>
+        <div id="arcade" class="games">
+            <p class="p1" id="pacs">Pac-Max</p>
+            <p class="p2">40 yıla aşkın bir süredir aktif olan Pac-Max, MGame Klasik sever oyuncularının gozdesi olmaya devam ediyor.</p>
+            <img src="Resimler/pacman.gif" id="pac" width="80">
+            <img src="Resimler/pngwing.com.png" id="mons" width="70">
+            <button class="btns arc" id="play">Baslat</button>
+            <button class="btns arc" id="res">Reset</button>
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 0;bottom: 0;">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 300px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 600px;bottom: 0;">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 900px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 1200px;bottom: 0;">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 1500px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave1.svg" width="300" style="position: absolute;left: 1800px;bottom: 0;">
+            <div style="width: 100%;height: 100px;position: absolute;bottom: 0;left: 0;"></div>
+        </div>
+        <div id="pg" class="games">
+            <p class="p1">PONG</p>
+            <p class="p2">Pong populerlik kazanan ilk video oyunlarından biri oldu. MGame oyuncularının Pac-Max'den sonra en çok sevdikleri 2. oyun</p>
+            <div id="arena">
+                <div class="wall"></div>
+                <div class="wall" style="bottom: 0;"></div>
+                <div class="players" id="p1" style="right: 740px;"></div>
+                <div class="players" id="p2" style="right: 30px;"></div>
+                <div id="ball"></div>
+                <div id="puan" style="font-family: 'DotGothic16', sans-serif;font-size: 50px;">
+                    <div id="p1puan" style="display: inline;">0</div>
+                    <div id="p2puan" style="display: inline;float: right;">0</div>
+                </div>
+                <button class="btns" id="play2">Baslat</button>
+            </div>
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 0;bottom: 0;">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 300px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 600px;bottom: 0;">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 900px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 1200px;bottom: 0;">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 1500px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave.svg" width="300" style="position: absolute;left: 1800px;bottom: 0;">
+            <div style="width: 100%;height: 100px;position: absolute;bottom: 0;left: 0;"></div>
+        </div>
+        <div id="sg" class="games">
+            <p class="p1">Snake</p>
+            <p class="p2">Elma yiyerek uzadığınız, nostajlinin dibine vuran oyun. MGame oyunularının Pong'dan sonra sevdikleri 3. Oyun</p>
+            <div id="bolge">
+                <img src="Resimler/download-removebg-preview.png" id="elm" width="20" style="position: absolute;top: 200px;right: 600px;">
+                <div id="yilan"></div>
+                <div class="part"></div>
+                <button class="btns" id="play3">Baslat</button>
+            </div>
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 0;bottom: 0;">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 300px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 600px;bottom: 0;">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 900px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 1200px;bottom: 0;">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 1500px;bottom: 0;transform: rotateY(180deg);">
+            <img src="Resimler/wave2.svg" width="300" style="position: absolute;left: 1800px;bottom: 0;">
+            <div style="width: 100%;height: 100px;position: absolute;bottom: 0;left: 0;"></div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li>Bizimle İletişime Geçin</li>
+                <li>
+                    <details>
+                        <summary style="cursor: pointer;">Numaramız</summary>
+                        <p>05334313542</p>
+                    </details>
+                </li>
+                <li><a href="mailto:tanyasin073@gmail.com">E-posta</a></li>
+                <li><a href="">Adres</a></li>
+            </ul>
+            <ul>
+                <li>Bizi Takip Edin</li>
+                <li><a href="">İnstagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Reddit</a></li>
+                <li><a href="">Discord</a></li>
+            </ul>
+            <ul style="float: right;">
+                <li>Diğer</li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">İş Başvurusu</a></li>
+                <li><a href="">Koşullar</a></li>
+                <li><a href="">Gizlilik</a></li>
+                <li><a href="">Hakkında</a></li>
+                <li><a href="">SSS</a></li>
+                <li><a href="">Neden Biz ?</a></li>
+            </ul>
+            <p style="padding-top: 210px;margin: auto;color: white;">@MGame. Tüm Hakları Saklıdır.</p>
+        </div>
+    </div>
+    <script src="JS/snake.js"></script>
+    <script src="JS/pong.js"></script>
+    <script src="JS/pacman.js"></script>
+    <script src="JS/navbar.js"></script>
+</body>
+</html>
